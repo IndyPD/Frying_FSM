@@ -1,0 +1,13 @@
+protobuf==3.19.4
+grpcio==1.34.1
+grpcio-tools==1.34.1
+psutil
+graphviz
+scipy~=1.7.3
+numpy~=1.21.5
+matplotlib
+semver
+pyyaml
+py_trees
+pyModbusTCP
+neuromeka-clients

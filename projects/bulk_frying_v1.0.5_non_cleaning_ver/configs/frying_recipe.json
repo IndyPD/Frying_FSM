@@ -1,0 +1,90 @@
+{
+  "recipe0": {
+    "recipe_index": 0,
+    "recipe_name": "",
+    "frying_type": 0,
+    "pre_fry_time": 0,
+    "fry_time": 0,
+    "putin_shake": true
+  },
+  "recipe1": {
+    "recipe_index": 1,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe2": {
+    "recipe_index": 2,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe3": {
+    "recipe_index": 3,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe4": {
+    "recipe_index": 4,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe5": {
+    "recipe_index": 5,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe6": {
+    "recipe_index": 6,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe7": {
+    "recipe_index": 7,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe8": {
+    "recipe_index": 8,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe9": {
+    "recipe_index": 9,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  },
+  "recipe10": {
+    "recipe_index": 10,
+    "recipe_name": "",
+    "type": 0,
+    "input_shake": 0,
+    "first_fry_time": 0,
+    "fry_time": 0
+  }
+}

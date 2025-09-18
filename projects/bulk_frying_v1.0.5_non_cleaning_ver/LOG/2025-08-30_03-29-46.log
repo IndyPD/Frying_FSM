@@ -1,0 +1,273 @@
+[2025-08-30|03:29:46][INFO]  Blackboard initialized from projects/bulk_frying/configs/blackboard.json
+[2025-08-30|03:29:48][INFO]  DEBUG: cooking_logger.py module is being loaded.
+[2025-08-30|03:29:48][INFO]  IndyCare MQTT logging is enabled.
+[2025-08-30|03:29:48][INFO]  [CookingLogger] Using MQTT Device ID: indyHomyeongFrying
+[2025-08-30|03:29:48][INFO]  cooking_logger.py: CONNECT MQTT server success...
+[2025-08-30|03:29:48][INFO]  [SYSTEM] Starting bulk_frying System...
+[2025-08-30|03:29:48][INFO]  Init AppCommunication
+[2025-08-30|03:29:49][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: Program is NOT running PROG_IDLE.
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Robot FSM] Enter NotReadyStrategy State.
+[2025-08-30|03:29:49][INFO]  robot fsm run
+[2025-08-30|03:29:49][INFO]  ProcessManager initialized with fry_type: dry
+[2025-08-30|03:29:49][INFO]  dryfsm 1
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dryfsm 2
+[2025-08-30|03:29:49][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dryfsm 3
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Robot FSM] Exit NotReadyStrategy State.
+[2025-08-30|03:29:49][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: Program is NOT running PROG_IDLE.
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dryfsm 4
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dryfsm 5
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dryfsm 6
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dryfsm 7
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dryfsm 8
+[2025-08-30|03:29:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:29:49][INFO]  dry fsm run
+[2025-08-30|03:29:49][INFO]  1 fryer Index : 1
+[2025-08-30|03:29:49][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:29:49][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:29:49][INFO]  3 fryer Index : 1
+[2025-08-30|03:29:49][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:29:49][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:29:49][INFO]  6 fryer Index : 4
+[2025-08-30|03:29:49][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:29:49][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:29:49][INFO]  8 fryer Index : 4
+[2025-08-30|03:29:49][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:29:49][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:29:49][INFO]  2025-08-30 03:29:49: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:29:50][INFO]  wet fsm run
+[2025-08-30|03:29:50][INFO]  [ProcessManager Init] Current Working Directory: /home/user/dev/runtest/Release/codex_agents_indycare
+[2025-08-30|03:29:50][INFO]  [ProcessManager Init] Attempting to load config from: /home/user/dev/runtest/Release/codex_agents_indycare/projects/bulk_frying/configs/app_config.json
+[2025-08-30|03:29:50][INFO]  [ProcessManager Init] Extracted eco_sensor_config: {'enabled': False, 'communication_type': 'socket', 'ip': '192.168.0.2', 'port': 5000, 'serial_port': '/dev/ttyUSB0', 'read_interval_minutes': 10, 'send_on_startup': True, 'max_retry_attempts': 3, 'retry_delay_seconds': 5}
+[2025-08-30|03:29:50][WARN]  [ProcessManager Init] EcoSensor is not enabled or config not found. Skipping initialization.
+[2025-08-30|03:29:50][INFO]  EcoSensor: Will send data immediately on first run.
+[2025-08-30|03:29:50][INFO]  [SYSTEM] bulk_frying system initialized. Running...
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [ProcessManager] Reset all recipes!
+[2025-08-30|03:31:09][INFO]  [ProcessManager] `prog_stopped` flag has been manually reset.
+[2025-08-30|03:31:09][INFO]  [SYSTEM] [DEBUG] Received request for full FSM reset.
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:09][INFO]  [SYSTEM] [DEBUG] Starting full FSM reset including Robot FSM.
+[2025-08-30|03:31:09][INFO]  [SYSTEM] [DEBUG] Stopping current Robot FSM thread.
+[2025-08-30|03:31:09][INFO]  RobotFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][INFO]  RobotFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  [SYSTEM] [DEBUG] Re-initializing Robot FSM.
+[2025-08-30|03:31:09][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Robot FSM] Enter NotReadyStrategy State.
+[2025-08-30|03:31:09][INFO]  [SYSTEM] [DEBUG] Robot FSM restarted successfully.
+[2025-08-30|03:31:09][INFO]  [SYSTEM] [DEBUG] Stopping and re-initializing Recipe FSMs.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Robot FSM] Exit NotReadyStrategy State.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:09][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:09][INFO]  dryfsm 1
+[2025-08-30|03:31:09][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:09][INFO]  dryfsm 2
+[2025-08-30|03:31:09][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:09][INFO]  dryfsm 3
+[2025-08-30|03:31:09][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:09][INFO]  dryfsm 4
+[2025-08-30|03:31:09][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:09][INFO]  dryfsm 5
+[2025-08-30|03:31:09][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:09][INFO]  2025-08-30 03:31:09: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:09][INFO]  dryfsm 6
+[2025-08-30|03:31:10][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:10][INFO]  2025-08-30 03:31:10: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:10][INFO]  dryfsm 7
+[2025-08-30|03:31:10][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:10][INFO]  2025-08-30 03:31:10: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:10][INFO]  dryfsm 8
+[2025-08-30|03:31:10][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-08-30|03:31:10][INFO]  2025-08-30 03:31:10: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-08-30|03:31:10][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-08-30|03:31:10][INFO]  1 fryer Index : 1
+[2025-08-30|03:31:10][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:31:10][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:31:10][INFO]  2025-08-30 03:31:10: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:31:10][INFO]  3 fryer Index : 1
+[2025-08-30|03:31:10][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:31:10][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:31:10][INFO]  2025-08-30 03:31:10: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:31:10][INFO]  6 fryer Index : 4
+[2025-08-30|03:31:10][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:31:10][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:31:10][INFO]  2025-08-30 03:31:10: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:31:10][INFO]  8 fryer Index : 4
+[2025-08-30|03:31:10][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-08-30|03:31:10][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-08-30|03:31:10][INFO]  2025-08-30 03:31:10: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-08-30|03:31:10][INFO]  [SYSTEM] [DEBUG] All Recipe FSMs restarted successfully.
+[2025-08-30|03:31:10][INFO]  [SYSTEM] [DEBUG] Full FSM reset complete.
+[2025-08-30|03:31:12][DEBUG] cooking_logger.py: send_recipe_list_mqtt() called with data: [{'label': '', 'time': 0}, {'label': '치킨', 'time': 180}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}]
+[2025-08-30|03:31:12][DEBUG] cooking_logger.py: send_mqtt_log() called with data: {'recipeList': [{'label': '', 'time': 0}, {'label': '치킨', 'time': 180}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}]}
+[2025-08-30|03:31:12][DEBUG] cooking_logger.py: Publishing to topic 'v1/devices/me/telemetry' with payload: {'recipeList': [{'label': '', 'time': 0}, {'label': '치킨', 'time': 180}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}]}
+[2025-08-30|03:31:12][INFO]  cooking_logger.py: Successfully sent log to MQTT.
+[2025-08-30|03:31:12][INFO]  -------- ui/recipe1/reset/recipe_name 191 True
+[2025-08-30|03:31:12][INFO]  ---sdfsdfsdff=----------
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: [Robot FSM] Program Start.
+[2025-08-30|03:31:25][ERROR] Start main program
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Wait for main program running
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Wait for main program running
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Wait for main program running
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Wait for main program running
+[2025-08-30|03:31:25][INFO]  2025-08-30 03:31:25: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Wait for main program running
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Wait for main program running
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Wait for main program running
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Wait for main program running
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Wait for main program running
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: Wait for main program running
+[2025-08-30|03:31:26][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-08-30|03:31:26][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-08-30|03:31:26][INFO]  2025-08-30 03:31:26: [Robot FSM] Start motion True move_to_ready  
+[2025-08-30|03:31:26][INFO]  Command I600 : 100
+[2025-08-30|03:31:27][INFO]  2025-08-30 03:31:27: [ProcessManager] Program has restarted. `prog_stopped` is set to False.
+[2025-08-30|03:31:28][INFO]  2025-08-30 03:31:28: [Robot FSM] Finish motion move_to_ready
+[2025-08-30|03:31:28][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_TO_READY
+[2025-08-30|03:31:28][INFO]  2025-08-30 03:31:28: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-08-30|03:31:28][DEBUG] RobotFsmSequence: Enter new state READY_IDLE
+[2025-08-30|03:31:28][INFO]  2025-08-30 03:31:28: [Robot FSM] Enter ReadyIdleStrategy State.
+[2025-08-30|03:31:28][INFO]  Command I600 : 0
+[2025-08-30|03:31:30][INFO]  [Basket 1] Waiting for recipe assignment lock.
+[2025-08-30|03:31:30][INFO]  [Basket 1] Acquired recipe assignment lock.
+[2025-08-30|03:31:30][INFO]  [Basket 1] Releasing recipe assignment lock.
+[2025-08-30|03:31:30][INFO]  2025-08-30 03:31:30: [Basket 1 FSM] Assign new menu 1
+[2025-08-30|03:31:30][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-08-30|03:31:30][INFO]  2025-08-30 03:31:30: [Basket 1 FSM] Exit DryNoMenuStrategy State.
+[2025-08-30|03:31:30][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-08-30|03:31:30][INFO]  2025-08-30 03:31:30: [Basket 1 FSM] Enter DryCookingReadyStrategy State.
+[2025-08-30|03:31:30][INFO]  2025-08-30 03:31:30: [Basket 1 FSM] Start cooking.
+[2025-08-30|03:31:30][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-08-30|03:31:31][INFO]  2025-08-30 03:31:31: [Basket 1 FSM] Exit DryCookingReadyStrategy State.
+[2025-08-30|03:31:31][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-08-30|03:31:31][INFO]  2025-08-30 03:31:31: [Basket 1 FSM] Enter DryMoveToFryStrategy State.
+[2025-08-30|03:31:31][INFO]  [Debug] Basket 1: putin_shake=True, type=<class 'bool'>
+[2025-08-30|03:31:31][INFO]  [PriorityScheduler] Current priority list:
+[2025-08-30|03:31:31][INFO]    - Basket 1 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 1000.0s | Priority: 3
+[2025-08-30|03:31:31][INFO]  trigger_to_fryer_motion 1
+[2025-08-30|03:31:31][INFO]  2025-08-30 03:31:31: [ProcessManager] Trigger move_to_fryer motion [FSM 1, Basket 1, Fryer 1]
+[2025-08-30|03:31:31][DEBUG] RobotFsmSequence: Trigger Event RUN_BASKET_TO_FRYER on READY_IDLE
+[2025-08-30|03:31:31][INFO]  2025-08-30 03:31:31: [Robot FSM] Exiting ReadyIdleStrategy State.
+[2025-08-30|03:31:31][DEBUG] RobotFsmSequence: Enter new state MOVE_BASKET_TO_FRYER
+[2025-08-30|03:31:31][INFO]  2025-08-30 03:31:31: [Robot FSM] Enter MoveBasketToFryerStrategy State.
+[2025-08-30|03:31:31][INFO]  2025-08-30 03:31:31: [Robot FSM] Start motion move_to_fryer with [basket 1, fryer 1]
+[2025-08-30|03:31:31][INFO]  basket_to_fryer 311
+[2025-08-30|03:31:31][INFO]  Command I600 : 311
+[2025-08-30|03:31:39][INFO]  2025-08-30 03:31:39: Program stopped by App.
+[2025-08-30|03:31:39][INFO]  [DEBUG] stop_program: Sending stop command to Conty.
+[2025-08-30|03:31:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-08-30|03:31:39][INFO]  Stop program!!
+[2025-08-30|03:31:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-08-30|03:31:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-08-30|03:31:39][INFO]  [DEBUG] stop_program: Conty program confirmed to be in IDLE state.
+[2025-08-30|03:31:39][DEBUG] RobotFsmSequence: Trigger Event STOP on MOVE_BASKET_TO_FRYER
+[2025-08-30|03:31:39][INFO]  2025-08-30 03:31:39: Exit MoveBasketToFryerStrategy State.
+[2025-08-30|03:31:39][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-08-30|03:31:39][INFO]  2025-08-30 03:31:39: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:39][INFO]  2025-08-30 03:31:39: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-08-30|03:31:39][INFO]  Command I600 : 0
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Program Start.
+[2025-08-30|03:31:53][ERROR] Start main program
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Wait for main program running
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Wait for main program running
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Wait for main program running
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Wait for main program running
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Wait for main program running
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Wait for main program running
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Program is NOT running PROG_IDLE.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: Wait for main program running
+[2025-08-30|03:31:53][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-08-30|03:31:53][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Start motion False move_to_ready  
+[2025-08-30|03:31:53][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_TO_READY
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-08-30|03:31:53][DEBUG] RobotFsmSequence: Enter new state READY_IDLE
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Enter ReadyIdleStrategy State.
+[2025-08-30|03:31:53][DEBUG] RobotFsmSequence: Trigger Event RUN_BASKET_TO_FRYER on READY_IDLE
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Exiting ReadyIdleStrategy State.
+[2025-08-30|03:31:53][DEBUG] RobotFsmSequence: Enter new state MOVE_BASKET_TO_FRYER
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Enter MoveBasketToFryerStrategy State.
+[2025-08-30|03:31:53][INFO]  2025-08-30 03:31:53: [Robot FSM] Start motion move_to_fryer with [basket 1, fryer 1]
+[2025-08-30|03:31:53][INFO]  basket_to_fryer 311
+[2025-08-30|03:31:53][INFO]  Command I600 : 311
+[2025-08-30|03:32:06][INFO]  2025-08-30 03:32:06: Program stopped by App.
+[2025-08-30|03:32:06][INFO]  [DEBUG] stop_program: Sending stop command to Conty.
+[2025-08-30|03:32:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-08-30|03:32:06][INFO]  Stop program!!
+[2025-08-30|03:32:07][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-08-30|03:32:07][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-08-30|03:32:07][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-08-30|03:32:07][INFO]  [DEBUG] stop_program: Conty program confirmed to be in IDLE state.
+[2025-08-30|03:32:07][DEBUG] RobotFsmSequence: Trigger Event STOP on MOVE_BASKET_TO_FRYER
+[2025-08-30|03:32:07][INFO]  2025-08-30 03:32:07: Exit MoveBasketToFryerStrategy State.
+[2025-08-30|03:32:07][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-08-30|03:32:07][INFO]  2025-08-30 03:32:07: Program is NOT running PROG_IDLE.
+[2025-08-30|03:32:07][INFO]  2025-08-30 03:32:07: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-08-30|03:32:07][INFO]  Command I600 : 0

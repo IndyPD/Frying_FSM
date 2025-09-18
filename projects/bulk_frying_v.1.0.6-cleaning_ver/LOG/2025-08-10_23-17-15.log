@@ -1,0 +1,27 @@
+[2025-08-10|23:17:15][INFO]  --- Starting EcoSensor MQTT Test ---
+[2025-08-10|23:17:15][INFO]  [EcoSensor] Using MQTT Device ID: indydb51i7e0c001
+[2025-08-10|23:17:16][INFO]  [SUCCESS] EcoSensor: Connected to MQTT server.
+[2025-08-10|23:17:16][INFO]  
+Successfully connected to MQTT. Starting to send simulated data...
+[2025-08-10|23:17:16][INFO]  Press Ctrl+C to stop the test.
+[2025-08-10|23:17:16][INFO]  
+[Sun Aug 10 23:17:16 2025] Sending simulated data:
+[2025-08-10|23:17:16][INFO]  {'co2': 628, 'co': 0, 'tvoc': 208, 'temperature': 21.4, 'humidity': 57}
+[2025-08-10|23:17:16][ERROR] [ERROR] EcoSensor: Failed to send MQTT message: 'MQTTSession' object has no attribute 'topic_prefix'
+[2025-08-10|23:17:21][INFO]  
+[Sun Aug 10 23:17:21 2025] Sending simulated data:
+[2025-08-10|23:17:21][INFO]  {'co2': 883, 'co': 9, 'tvoc': 306, 'temperature': 22.2, 'humidity': 58}
+[2025-08-10|23:17:21][ERROR] [ERROR] EcoSensor: Failed to send MQTT message: 'MQTTSession' object has no attribute 'topic_prefix'
+[2025-08-10|23:17:26][INFO]  
+[Sun Aug 10 23:17:26 2025] Sending simulated data:
+[2025-08-10|23:17:26][INFO]  {'co2': 402, 'co': 1, 'tvoc': 374, 'temperature': 27.1, 'humidity': 53}
+[2025-08-10|23:17:26][ERROR] [ERROR] EcoSensor: Failed to send MQTT message: 'MQTTSession' object has no attribute 'topic_prefix'
+[2025-08-10|23:17:31][INFO]  
+[Sun Aug 10 23:17:31 2025] Sending simulated data:
+[2025-08-10|23:17:31][INFO]  {'co2': 597, 'co': 7, 'tvoc': 395, 'temperature': 26.4, 'humidity': 47}
+[2025-08-10|23:17:31][ERROR] [ERROR] EcoSensor: Failed to send MQTT message: 'MQTTSession' object has no attribute 'topic_prefix'
+[2025-08-10|23:17:33][INFO]  
+
+KeyboardInterrupt detected. Shutting down the test script.
+[2025-08-10|23:17:34][INFO]  EcoSensor: MQTT session closed.
+[2025-08-10|23:17:34][INFO]  --- EcoSensor MQTT Test Finished ---
