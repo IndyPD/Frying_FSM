@@ -189,7 +189,7 @@ class RobotActionsContext(ContextBase):
         # prog_state = bb.get("indy")["program_state"]
         # temp_log_data = bb.get("indy") 
         
-        if prog_state == ProgramState.PROG_RUNNING:
+        if prog_state == ProgramState.PROG_RUNNING :
             return True
         else:
             Logger.info(f"{get_time()}: Program is NOT running {ProgramState(prog_state).name}.")

@@ -421,6 +421,10 @@
 
     "ui/state/cleaning_mode": 0,
     "ui/command/cleaning_mode" : 0,
-    "ui/reset/cleaning_mode" : false
+    "ui/reset/cleaning_mode" : false,
+
+    "ui/state/lidar_sensor": 3,
+    "ui/command/lidar_restart" : 0,
+    "ui/reset/lidar_restart" : false
 
 }
