@@ -249,7 +249,7 @@ class RobotCommunication:
             #     return
             do = self.indy.get_do()['signals']
 
-            if self.get_dio_channel(do, 8) == 0 :
+            if self.get_dio_channel(do, 8) == 1 :
                 current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
                 if current_speed != 100:
                     self.indy.set_speed_ratio(100)
