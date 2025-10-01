@@ -10,7 +10,7 @@ PASSWORD = "dali3254"
 TOPIC = "v1/devices/me/telemetry"
 
 # 로봇 시리얼 아이디 (고정)
-robot_id = "indyHomyeongFrying"     #포항고 국탕 시리얼 아이디
+robot_id = "indyPohangSoup"     #포항고 국탕 시리얼 아이디
 #robot_id = "indyX600WO0067"    #가흥초 국탕 시리얼 아이디
 
 def send_mqtt_message(payload):

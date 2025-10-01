@@ -205,10 +205,10 @@ class RobotCommunication:
         """ Thread's target function """
         while self.running:
             time.sleep(0.001)
-            self.indy_communication()    # Get indy data
-            self.handle_lidar_safety()   # Lidar safety logic
             self.receive_data_from_bb()  # Get bb data, process bb data
             self.handle_int_variable()   # Get bb data, process bb data
+            self.indy_communication()    # Get indy data
+            self.handle_lidar_safety()   # Lidar safety logic
             self.send_data_to_bb()       # Send indy data to bb
 
     def get_dio_channel(self, di, ch):
@@ -223,7 +223,7 @@ class RobotCommunication:
     def handle_lidar_safety(self):
         """
         Lidar 센서 기반 안전 로직
-        - DI2 (보호 영역): 로봇 프로그램을 즉시 정지.
+        - DI2 (보호 영역): 로봇 프로그램을 즉시 일시정지. UI의 재시작 명령과 3초 딜레이 후 프로그램을 이어서 다시 시작.
         - DI1 (경고 영역): 로봇 속도를 30으로 감속.
         - DI0 (주의 영역): 로봇 속도를 70으로 감속.
         - 센서 우선순위: DI2 > DI1 > DI0 순서로 적용.
@@ -237,87 +237,120 @@ class RobotCommunication:
                 bb.set('ui/state/cleaning_mode', 2)
                 self.indy.set_do([{'address': self.cleaning_mode_do_channel, 'state': 1}])
 
+            # 청소 모드일 경우, 라이다 로직을 실행하지 않음 (기존과 동일)
+            # if bb.get('ui/state/cleaning_mode') == 2:
+            #     current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
+            #     if current_speed != 100:
+            #         self.indy.set_speed_ratio(100)
+            #     return
             do = self.indy.get_do()['signals']
-            
-            # 항상 라이다 센서 상태를 읽고 blackboard에 업데이트
-            is_di0_on = self.get_dio_channel(do, self.lidar_warning_channel1) == 1
-            is_di1_on = self.get_dio_channel(do, self.lidar_warning_channel2) == 1
-            is_di2_on = self.get_dio_channel(do, self.lidar_protective_channel) == 1
 
-            if is_di2_on:
-                bb.set("ui/state/lidar_sensor", 2)
-            elif is_di1_on:
-                bb.set("ui/state/lidar_sensor", 1)
-            elif is_di0_on:
-                bb.set("ui/state/lidar_sensor", 0)
-            else:
-                bb.set("ui/state/lidar_sensor", 3)
-
-            # 청소 모드(DO8)가 켜져 있으면, 라이다 로직의 나머지 부분을 무시
-            if self.get_dio_channel(do, 8) == 1:
+            if self.get_dio_channel(do, 8) == 1 :
                 current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
                 if current_speed != 100:
                     self.indy.set_speed_ratio(100)
                 return
+            # [중요] 라이다 센서 값 읽기 (di로 설정해야 합니다)
+            # di = self.indy.get_di()['signals']
+            # is_di0_on = self.get_dio_channel(di, self.lidar_warning_channel1) == 1
+            # is_di1_on = self.get_dio_channel(di, self.lidar_warning_channel2) == 1
+            # is_di2_on = self.get_dio_channel(di, self.lidar_protective_channel) == 1
+            is_di0_on = self.get_dio_channel(do, self.lidar_warning_channel1) == 1
+            is_di1_on = self.get_dio_channel(do, self.lidar_warning_channel2) == 1
+            is_di2_on = self.get_dio_channel(do, self.lidar_protective_channel) == 1
+            # --- 센서 우선순위에 따른 로봇 제어 및 UI 상태 업데이트 ---
 
-            # --- 센서 우선순위에 따른 로봇 제어 ---
-
-            # 1순위: 보호 영역 (di2) - 프로그램 정지
+            # 1순위: 보호 영역 (di2) - ✨ 프로그램 정지
             if is_di2_on:
+                bb.set("ui/state/lidar_sensor", 2)
                 self.indy.set_do([
-                    {'address': 10, 'state': DigitalState.OFF_STATE},
-                    {'address': 11, 'state': DigitalState.OFF_STATE},
-                    {'address': 12, 'state': DigitalState.ON_STATE},
-                    {'address': 13, 'state': DigitalState.ON_STATE}
+                {'address': 10, 'state': DigitalState.OFF_STATE},
+                {'address': 11, 'state': DigitalState.OFF_STATE},
+                {'address': 12, 'state': DigitalState.ON_STATE},
+                {'address': 13, 'state': DigitalState.ON_STATE}
                 ])
-                if self.program_state == ProgramState.PROG_RUNNING:
+                if self.program_state == ProgramState.PROG_RUNNING: # 실행 중일 때만 정지
                     try:
                         Logger.info("라이다 보호 영역(DI2) 침범. 프로그램을 정지합니다.")
                         self.indy.stop_program()
                         self.indy.set_speed_ratio(100)
                     except Exception as e:
                         Logger.error(f"프로그램 정지 실패: {e}")
+                self.lidar_restart_timer = None
                 return
 
-            # 2순위: 경고 영역 (di1) - 속도 감속
+            # 2, 3순위 및 기타 로직 (기존과 동일)
             elif is_di1_on:
+                bb.set("ui/state/lidar_sensor", 1)
                 self.indy.set_do([
-                    {'address': 10, 'state': DigitalState.OFF_STATE},
-                    {'address': 11, 'state': DigitalState.ON_STATE},
-                    {'address': 12, 'state': DigitalState.ON_STATE},
-                    {'address': 13, 'state': DigitalState.OFF_STATE}
+                {'address': 10, 'state': DigitalState.OFF_STATE},
+                {'address': 11, 'state': DigitalState.ON_STATE},
+                {'address': 12, 'state': DigitalState.ON_STATE},
+                {'address': 13, 'state': DigitalState.OFF_STATE}
                 ])
+                self.lidar_restart_timer = None
                 current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
                 if current_speed != 30:
                     self.indy.set_speed_ratio(30)
                     Logger.info("라이다 경고 영역(DI1) 침범. 속도를 30으로 변경합니다.")
                 return
 
-            # 3순위: 주의 영역 (di0) - 속도 감속
             elif is_di0_on:
+                bb.set("ui/state/lidar_sensor", 0)
                 self.indy.set_do([
-                    {'address': 10, 'state': DigitalState.OFF_STATE},
-                    {'address': 11, 'state': DigitalState.ON_STATE},
-                    {'address': 12, 'state': DigitalState.ON_STATE},
-                    {'address': 13, 'state': DigitalState.OFF_STATE}
+                {'address': 10, 'state': DigitalState.OFF_STATE},
+                {'address': 11, 'state': DigitalState.ON_STATE},
+                {'address': 12, 'state': DigitalState.ON_STATE},
+                {'address': 13, 'state': DigitalState.OFF_STATE}
                 ])
+                self.lidar_restart_timer = None
                 current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
                 if current_speed != 70:
                     self.indy.set_speed_ratio(70)
                     Logger.info("라이다 주의 영역(DI0) 침범. 속도를 70으로 변경합니다.")
                 return
-            
-            # 모든 영역이 안전할 경우
-            else:
+            else :  
+                bb.set("ui/state/lidar_sensor", 3)
                 self.indy.set_do([
-                    {'address': 10, 'state': DigitalState.OFF_STATE},
-                    {'address': 11, 'state': DigitalState.OFF_STATE},
-                    {'address': 12, 'state': DigitalState.OFF_STATE},
-                    {'address': 13, 'state': DigitalState.OFF_STATE}
+                {'address': 10, 'state': DigitalState.OFF_STATE},
+                {'address': 11, 'state': DigitalState.OFF_STATE},
+                {'address': 12, 'state': DigitalState.OFF_STATE},
+                {'address': 13, 'state': DigitalState.OFF_STATE}
                 ])
                 current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
-                if current_speed != 100:
-                    self.indy.set_speed_ratio(100)
+                if current_speed != 100 and self.lidar_restart_timer is None:
+                     self.indy.set_speed_ratio(100)
+
+
+            # 모든 영역이 안전할 경우
+            # else:
+            #     bb.set("ui/state/lidar_sensor", 3)
+                
+            #     if bb.get('ui/command/lidar_restart') == 1:
+            #         bb.set('ui/command/lidar_restart', 0)
+            #         bb.set('ui/reset/lidar_restart', True)
+
+            #         if not is_di2_on and self.lidar_restart_timer is None:
+            #             self.lidar_restart_timer = time.time()
+            #             Logger.info("라이다 재시작 명령 수신. 3초 후 프로그램 이어서 시작을 시도합니다.")
+
+            #     # ✨ 재시작 타이머 동작 로직 변경 (resume으로)
+            #     if self.lidar_restart_timer is not None:
+            #         if (time.time() - self.lidar_restart_timer) >= 3:
+            #             Logger.info("3초 경과. 프로그램을 이어서 다시 시작합니다.")
+            #             try:
+            #                 # 프로그램을 이어서 시작
+            #                 self.indy.resume_program()
+            #             except Exception as e:
+            #                 Logger.error(f"프로그램 재개 실패: {e}")
+            #             self.lidar_restart_timer = None
+            #         return
+
+            #     # 속도 복귀 로직 (기존과 동일)
+            #     current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
+            #     if current_speed != 100 and self.lidar_restart_timer is None:
+            #          self.indy.set_speed_ratio(100)
+            #          Logger.info("라이다 모든 영역 안전. 속도를 100으로 복귀합니다.")
 
         except Exception as e:
             Logger.error(f"handle_lidar_safety 함수 오류: {e}")
@@ -389,28 +422,30 @@ class RobotCommunication:
         ''' Start program (Main program, index=1) '''
         if bb.get("indy_command/play_program"):
             bb.set("indy_command/play_program", False)
-            if bb.get("ui/state/lidar_sensor") == 3:
-                if self.program_state != ProgramState.PROG_RUNNING:
-                    try:
-                        Logger.info("Start main program")
-                        self.indy.play_program(prog_idx=int(self.config["conty_main_program_index"]))
-                    except:
-                        Logger.error("Start main program fail")
-            else:
-                Logger.warning("Cannot start program because lidar sensor is not in a safe condition.")
+            if self.program_state != ProgramState.PROG_RUNNING:
+                try:
+                    Logger.info("Start main program")
+                    self.indy.play_program(prog_idx=int(self.config["conty_main_program_index"]))
+                except:
+                    Logger.error("Start main program fail")
+            # if bb.get("ui/state/lidar_sensor") == 3:
+            #     if self.program_state != ProgramState.PROG_RUNNING:
+            #         try:
+            #             Logger.info("Start main program")
+            #             self.indy.play_program(prog_idx=int(self.config["conty_main_program_index"]))
+            #         except:
+            #             Logger.error("Start main program fail")
+            # else:
+            #     Logger.error("Cannot start program because lidar sensor is not in a safe condition.")
 
         ''' Start program (Warming motion, index=2) '''
         if bb.get("indy_command/play_warming_program"):
             bb.set("indy_command/play_warming_program", False)
-            if bb.get("ui/state/lidar_sensor") == 3:
-                if self.program_state != ProgramState.PROG_RUNNING:
-                    try:
-                        Logger.info("Start warming program")
-                        self.indy.play_program(prog_idx=int(self.config["conty_warming_program_index"]))
-                    except:
-                        Logger.error("Start warming program fail")
-            else:
-                Logger.warning("Cannot start warming program because lidar sensor is not in a safe condition.")
+            if self.program_state != ProgramState.PROG_RUNNING:
+                try:
+                    self.indy.play_program(prog_idx=int(self.config["conty_warming_program_index"]))
+                except:
+                    Logger.error("Start warming program fail")
 
         ''' Stop program '''
         if bb.get("indy_command/stop_program"):
