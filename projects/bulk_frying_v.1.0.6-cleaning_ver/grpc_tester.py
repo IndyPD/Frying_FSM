@@ -217,6 +217,6 @@ def run_dummy_client(ip, port):
 
 if __name__ == '__main__':
     # 서버 IP와 포트를 여기에 설정하세요.
-    SERVER_IP = "192.168.5.115" 
+    SERVER_IP = "192.168.0.4" 
     SERVER_PORT = 503
     run_dummy_client(SERVER_IP, SERVER_PORT)

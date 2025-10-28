@@ -48,8 +48,9 @@ def send_core_status():
 # 2. COBOT 상태정보
 def send_cobot_status():
     payload = {
-        "time": random.uniform(0, 10000),
-        "opState": random.choice(["SERVO_OFF", "VIOLATE", "RECOVER", "IDLE", "MOVING", "TEACHING", "COLLISION"]),
+        "time": random.uniform(0, 1500),
+        # "opState": random.choice(["SERVO_OFF", "VIOLATE", "RECOVER", "IDLE", "MOVING", "TEACHING", "COLLISION"]),
+        "opState" : random.choice(["MOVING"]),
         "violationType": random.randint(0, 10),
         "q": ",".join(map(str, [random.uniform(-180, 180) for _ in range(6)])),
         "e": ",".join(map(str, [random.uniform(-10, 10) for _ in range(6)])),
@@ -100,15 +101,15 @@ def send_environmental_data():
   
 if __name__ == "__main__":
     runCount=0
-    while runCount<10:
+    while runCount<3:
 
-        send_core_status()  # CORE 상태정보 전송
+        # send_core_status()  # CORE 상태정보 전송
         send_cobot_status()  # COBOT 상태정보 전송
-        send_operation_status()  # 조업 정보 전송
-        send_cooking_robot_status()  # 조리로봇 정보 전송
-        send_recipe_list()  # 레시피 리스트 전송
-        send_environmental_data()  # 환경 센서 데이터 전송
-        
+        # send_operation_status()  # 조업 정보 전송
+        # send_cooking_robot_status()  # 조리로봇 정보 전송
+        # send_recipe_list()  # 레시피 리스트 전송
+        # send_environmental_data()  # 환경 센서 데이터 전송
+        # break
         runCount+=1
         print(runCount)
         time.sleep(5)

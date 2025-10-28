@@ -169,11 +169,17 @@ class RobotCommunication:
 
         ''' 청소 모드 관련 변수 추가 '''
         self.prev_cleaning_mode_ui = None  # 이전 청소 모드 상태 저장
-        self.cleaning_mode_do_channel = 8  # 청소 모드 DO 채널
-        self.lidar_warning_channel1 = 0     # 라이다 경고 신호 DI 채널
-        self.lidar_warning_channel2 = 1
-        self.lidar_protective_channel = 2  # 라이다 보호 신호 DI 채널
+        # self.cleaning_mode_do_channel = 8  # 청소 모드 DO 채널
+        self.lidar_ossd_channel = 2
+        self.lidar_protective_channel = 1
+        self.lidar_warning_channel = 0
+        # self.lidar_warning_channel1 = 1     # 라이다 경고 신호 DI 채널
+        # self.lidar_warning_channel2 = 1
+        # self.lidar_protective_channel = 2  # 라이다 보호 신호 DI 채널
         self.lidar_restart_timer = None # For delayed lidar restart
+
+        self.blinking_light_state = DigitalState.OFF_STATE
+        self.last_blink_time = 0
 
     def start(self):
         """ Start the robot communication thread """
@@ -223,26 +229,36 @@ class RobotCommunication:
     def handle_lidar_safety(self):
         """
         Lidar 센서 기반 안전 로직
-        - DI2 (보호 영역): 로봇 프로그램을 즉시 정지.
-        - DI1 (경고 영역): 로봇 속도를 30으로 감속.
-        - DI0 (주의 영역): 로봇 속도를 70으로 감속.
+        - DI2 (보호 영역): 로봇 프로그램을 즉시 정지. DO 12, 13 점멸.
+        - DI1 (경고 영역): 로봇 속도를 30으로 감속. DO 11, 12 점멸.
+        - DI0 (주의 영역): 로봇 속도를 70으로 감속. DO 11, 12 점멸.
+        - 안전 영역: DO 10 점멸.
         - 센서 우선순위: DI2 > DI1 > DI0 순서로 적용.
         """
+        # 1초마다 점멸 상태를 업데이트
+        current_time = time.time()
+        if current_time - self.last_blink_time >= 1.0:
+            self.blinking_light_state = 1 - self.blinking_light_state
+            self.last_blink_time = current_time
+
         try:
             # ProgramState에 따라 청소 모드 설정
-            if self.program_state == ProgramState.PROG_RUNNING:
-                bb.set('ui/state/cleaning_mode', 1)
-                self.indy.set_do([{'address': self.cleaning_mode_do_channel, 'state': 0}])
-            elif self.program_state in (ProgramState.PROG_IDLE, ProgramState.PROG_STOPPING):
-                bb.set('ui/state/cleaning_mode', 2)
-                self.indy.set_do([{'address': self.cleaning_mode_do_channel, 'state': 1}])
+            # if self.program_state == ProgramState.PROG_RUNNING:
+            #     bb.set('ui/state/cleaning_mode', 1)
+            #     self.indy.set_do([{'address': self.cleaning_mode_do_channel, 'state': 0}])
+            # elif self.program_state in (ProgramState.PROG_IDLE, ProgramState.PROG_STOPPING):
+            #     bb.set('ui/state/cleaning_mode', 2)
+            #     self.indy.set_do([{'address': self.cleaning_mode_do_channel, 'state': 1}])
 
-            do = self.indy.get_do()['signals']
+            di = self.indy.get_di()['signals']
             
             # 항상 라이다 센서 상태를 읽고 blackboard에 업데이트
-            is_di0_on = self.get_dio_channel(do, self.lidar_warning_channel1) == 1
-            is_di1_on = self.get_dio_channel(do, self.lidar_warning_channel2) == 1
-            is_di2_on = self.get_dio_channel(do, self.lidar_protective_channel) == 1
+            # is_di0_on = self.get_dio_channel(di, self.lidar_ossd_channel) == 1
+            # is_di1_on = self.get_dio_channel(di, self.lidar_protective_channel) == 1
+            # is_di2_on = self.get_dio_channel(di, self.lidar_warning_channel) == 1
+            is_di0_on = self.get_dio_channel(di, self.lidar_warning_channel) == 1
+            is_di1_on = self.get_dio_channel(di, self.lidar_protective_channel) == 1
+            is_di2_on = self.get_dio_channel(di, self.lidar_ossd_channel) == 1
 
             if is_di2_on:
                 bb.set("ui/state/lidar_sensor", 2)
@@ -254,21 +270,21 @@ class RobotCommunication:
                 bb.set("ui/state/lidar_sensor", 3)
 
             # 청소 모드(DO8)가 켜져 있으면, 라이다 로직의 나머지 부분을 무시
-            if self.get_dio_channel(do, 8) == 1:
-                current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
-                if current_speed != 100:
-                    self.indy.set_speed_ratio(100)
-                return
+            # if self.get_dio_channel(do, 8) == 1:
+            #     current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
+            #     if current_speed != 100:
+            #         self.indy.set_speed_ratio(100)
+            #     return
 
             # --- 센서 우선순위에 따른 로봇 제어 ---
 
-            # 1순위: 보호 영역 (di2) - 프로그램 정지
+            # 1순위: 보호 영역 (di2) - 프로그램 정지(OSSD)
             if is_di2_on:
                 self.indy.set_do([
-                    {'address': 10, 'state': DigitalState.OFF_STATE},
+                    {'address': 10, 'state': self.blinking_light_state},
                     {'address': 11, 'state': DigitalState.OFF_STATE},
-                    {'address': 12, 'state': DigitalState.ON_STATE},
-                    {'address': 13, 'state': DigitalState.ON_STATE}
+                    {'address': 12, 'state': DigitalState.OFF_STATE},
+                    {'address': 13, 'state': self.blinking_light_state}
                 ])
                 if self.program_state == ProgramState.PROG_RUNNING:
                     try:
@@ -279,12 +295,31 @@ class RobotCommunication:
                         Logger.error(f"프로그램 정지 실패: {e}")
                 return
 
-            # 2순위: 경고 영역 (di1) - 속도 감속
+            # 2순위: 경고 영역 (di1) - 정지
             elif is_di1_on:
                 self.indy.set_do([
-                    {'address': 10, 'state': DigitalState.OFF_STATE},
-                    {'address': 11, 'state': DigitalState.ON_STATE},
-                    {'address': 12, 'state': DigitalState.ON_STATE},
+                    {'address': 10, 'state': self.blinking_light_state},
+                    {'address': 11, 'state': DigitalState.OFF_STATE},
+                    {'address': 12, 'state': DigitalState.OFF_STATE},
+                    {'address': 13, 'state': self.blinking_light_state}
+                ])
+                if self.program_state == ProgramState.PROG_RUNNING:
+                    try:
+                        Logger.info("라이다 보호 영역(DI2) 침범. 프로그램을 정지합니다.")
+                        # self.indy.stop_program()
+                        self.indy.set_speed_ratio(0)
+                        # self.indy.set_speed_ratio(100)
+                    except Exception as e:
+                        Logger.error(f"프로그램 정지 실패: {e}")
+                return
+
+                
+
+            elif is_di0_on:
+                self.indy.set_do([
+                    {'address': 10, 'state': self.blinking_light_state},
+                    {'address': 11, 'state': self.blinking_light_state},
+                    {'address': 12, 'state': DigitalState.OFF_STATE},
                     {'address': 13, 'state': DigitalState.OFF_STATE}
                 ])
                 current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
@@ -292,27 +327,26 @@ class RobotCommunication:
                     self.indy.set_speed_ratio(30)
                     Logger.info("라이다 경고 영역(DI1) 침범. 속도를 30으로 변경합니다.")
                 return
-
             # 3순위: 주의 영역 (di0) - 속도 감속
-            elif is_di0_on:
-                self.indy.set_do([
-                    {'address': 10, 'state': DigitalState.OFF_STATE},
-                    {'address': 11, 'state': DigitalState.ON_STATE},
-                    {'address': 12, 'state': DigitalState.ON_STATE},
-                    {'address': 13, 'state': DigitalState.OFF_STATE}
-                ])
-                current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
-                if current_speed != 70:
-                    self.indy.set_speed_ratio(70)
-                    Logger.info("라이다 주의 영역(DI0) 침범. 속도를 70으로 변경합니다.")
-                return
+            # elif is_di0_on:
+            #     self.indy.set_do([
+            #         {'address': 10, 'state': DigitalState.OFF_STATE},
+            #         {'address': 11, 'state': self.blinking_light_state},
+            #         {'address': 12, 'state': self.blinking_light_state},
+            #         {'address': 13, 'state': DigitalState.OFF_STATE}
+            #     ])
+            #     current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
+            #     if current_speed != 70:
+            #         self.indy.set_speed_ratio(70)
+            #         Logger.info("라이다 주의 영역(DI0) 침범. 속도를 70으로 변경합니다.")
+            #     return
             
             # 모든 영역이 안전할 경우
             else:
                 self.indy.set_do([
                     {'address': 10, 'state': DigitalState.OFF_STATE},
-                    {'address': 11, 'state': DigitalState.OFF_STATE},
-                    {'address': 12, 'state': DigitalState.OFF_STATE},
+                    {'address': 11, 'state': self.blinking_light_state},
+                    {'address': 12, 'state': self.blinking_light_state},
                     {'address': 13, 'state': DigitalState.OFF_STATE}
                 ])
                 current_speed = self.indy.get_motion_data().get("speed_ratio", 100)
@@ -389,6 +423,21 @@ class RobotCommunication:
         ''' Start program (Main program, index=1) '''
         if bb.get("indy_command/play_program"):
             bb.set("indy_command/play_program", False)
+
+            # Safety check for DO 0, 1, 2 before starting
+            try:
+                di_signals = self.indy.get_di()['signals']
+                is_di0_on = self.get_dio_channel(di_signals, 0) == 1
+                is_di1_on = self.get_dio_channel(di_signals, 1) == 1
+                is_di2_on = self.get_dio_channel(di_signals, 2) == 1
+
+                if is_di0_on or is_di1_on or is_di2_on:
+                    Logger.warn(f"Cannot start program because a safety DO is on. DO0:{is_di0_on}, DO1:{is_di1_on}, DO2:{is_di2_on}")
+                    return  # Abort start
+            except Exception as e:
+                Logger.error(f"Failed to check safety DO signals: {e}")
+                return  # Abort start for safety
+
             if bb.get("ui/state/lidar_sensor") == 3:
                 if self.program_state != ProgramState.PROG_RUNNING:
                     try:

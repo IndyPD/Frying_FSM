@@ -2,6 +2,7 @@ from pkg.utils.blackboard import GlobalBlackboard
 from .constants import *
 from pkg.utils.process_control import Flagger, reraise
 from pkg.configs.global_config import GlobalConfig
+from neuromeka import IndyDCP3
 
 bb = GlobalBlackboard()
 global_config = GlobalConfig()
