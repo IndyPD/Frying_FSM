@@ -93,6 +93,7 @@ class DryRecipeContext(ContextBase):
             ''' Initialize menu '''
             # self.cooking_start_time = time.time()
             self.cooking_start_time = 0
+            bb.set(f"ui/reset/fryer{self.fryer_index}/cancel",True)
             
             try :
                 self.frying_type = int(self.recipe["frying_type"])  # 1 for dry, 2 for wet        
@@ -166,7 +167,7 @@ class DryRecipeContext(ContextBase):
     def cancel_fryer(self):
         bb.set(f"ui/state/fryer{self.fryer_index}/elapsed_time", 0)
         self.cancellation_in_progress = True
-        # bb.set(f"ui/reset/fryer{self.fryer_index}/cancel", True)
+        bb.set(f"ui/reset/fryer{self.fryer_index}/cancel", True)
         Logger.info(f"{get_time()}: [Basket {self.basket_index} FSM] "
                     f"Cancel fryer {self.fryer_index}.")
         return DryRecipeFsmEvent.CANCEL_MENU

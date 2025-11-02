@@ -460,7 +460,7 @@ class DryFinishStrategy(Strategy):
             end_time=end_time,
             process_type='dry'
         )
-
+        bb.set(f"ui/command/fryer{context.fryer_index}/cancel", 0)
         bb.set(f"recipe/basket{context.basket_index}/state", DryRecipeFsmState.FINISH)
         Logger.info(f"{get_time()}: [Basket {context.basket_index} FSM] Enter {self.__class__.__name__} State.")
 
