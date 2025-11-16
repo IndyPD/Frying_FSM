@@ -1,0 +1,73 @@
+#
+#
+# See also https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+#
+# General idea taken from
+# https://godatadriven.com/blog/a-practical-guide-to-setuptools-and-pyproject-toml/
+
+[build-system]
+requires = [
+  # sync with setup.py until we discard non-pep-517/518
+  "setuptools",
+  "setuptools-scm",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "dirty-tag"
+
+[tool.mypy]
+# ignore_missing_imports = true
+check_untyped_defs = true
+show_error_codes = true
+# strict = true
+pretty = true
+
+
+[tool.black]
+line-length = 88
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+# diff = true
+
+
+[tool.docformatter]
+wrap-summaries = 80
+close-quotes-on-newline = true
+# make-summary-multi-line = true
+black = true
+pre-summary-newline = true
+recursive = true
+
+
+[tool.towncrier]
+package = "semver"
+package_dir = "src"
+filename = "CHANGELOG.rst"
+directory = "changelog.d/"
+title_format = "Version {version}"
+template = "changelog.d/_template.rst"
+# issue_format = "`#{issue} <https://github.com/python-attrs/attrs/issues/{issue}>`_"
+# issue_format = ":gh:`{issue}`"
+
+
+[tool.towncrier.fragment.breaking]
+name = "Breaking Changes"
+
+[tool.towncrier.fragment.bugfix]
+name = "Bug Fixes"
+
+[tool.towncrier.fragment.deprecation]
+name = "Deprecations"
+
+[tool.towncrier.fragment.doc]
+name = "Improved Documentation"
+
+[tool.towncrier.fragment.feature]
+name = "Features"
+
+[tool.towncrier.fragment.removal]
+name = "Removals"
+
+[tool.towncrier.fragment.trivial]
+name = "Trivial/Internal Changes"

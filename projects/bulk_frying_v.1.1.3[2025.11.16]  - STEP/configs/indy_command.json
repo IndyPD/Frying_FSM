@@ -1,0 +1,20 @@
+{
+  "conty_main_program_index": 1,
+  "conty_warming_program_index": 2,
+
+
+  "home_pos"       : [-50, 30, -160, 180, -40, -50],
+  "packaging_pos"  : [-90, 0, 150, 0, -150, 0],
+
+
+  "int_var/cmd/addr" : 600,
+  "int_var/init/addr" : 700,
+  "int_var/grip_state/addr" : 100,
+  "int_var/retry_grip/addr" : 103,
+  "int_var/putin_done/addr" : 109,
+  "int_var/pickup_done/addr" : 110,
+  "int_var/putin_shake/addr" : 130,
+  "int_var/shake_num/addr" : 131,
+  "int_var/shake_break/addr" : 132
+
+}
