@@ -1,0 +1,8 @@
+include *.rst
+include *.txt
+include tests/test_*.py
+
+prune docs/_build
+recursive-exclude .github  *
+
+global-exclude __pycache__
