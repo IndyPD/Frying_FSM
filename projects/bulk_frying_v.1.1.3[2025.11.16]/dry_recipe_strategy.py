@@ -6,6 +6,14 @@ from datetime import datetime
 global_config = GlobalConfig()
 bb = GlobalBlackboard()
 
+
+def _log_strategy_activation(context: DryRecipeContext, strategy_name: str):
+    """Log strategy switch once per activation."""
+    current = getattr(context, "_active_strategy_name", None)
+    if current != strategy_name:
+        setattr(context, "_active_strategy_name", strategy_name)
+        Logger.info(f"{get_time()}: [Basket {context.basket_index} FSM] Current Strategy -> {strategy_name}")
+
 """
 Frying template Recipe FSM Implementation
 """
@@ -111,6 +119,7 @@ Frying template Recipe FSM Implementation
 #         Logger.info(f"{get_time()}: [Basket {context.basket_index} FSM] Enter {self.__class__.__name__} State.")
 class DryNoMenuStrategy(Strategy):
     def prepare(self, context: DryRecipeContext, **kwargs):
+        _log_strategy_activation(context, self.__class__.__name__)
         bb.set(f"recipe/basket{context.basket_index}/state", DryRecipeFsmState.NO_MENU)
         
         if context.recipe_index != 0:
@@ -201,6 +210,7 @@ class DryNoMenuStrategy(Strategy):
 class DryCookingReadyStrategy(Strategy):
     def prepare(self, context: DryRecipeContext, **kwargs):
         ''' States to bb '''
+        _log_strategy_activation(context, self.__class__.__name__)
         bb.set(f"recipe/basket{context.basket_index}/state", DryRecipeFsmState.COOKING_READY)
 
         Logger.info(f"{get_time()}: [Basket {context.basket_index} FSM] Enter {self.__class__.__name__} State.")
@@ -264,6 +274,7 @@ class DryCookingReadyStrategy(Strategy):
 class DryMoveToFryStrategy(Strategy):
     def prepare(self, context: DryRecipeContext, **kwargs):
         ''' States to bb '''
+        _log_strategy_activation(context, self.__class__.__name__)
         bb.set(f"recipe/basket{context.basket_index}/state", DryRecipeFsmState.MOVE_TO_FRYER)
         # Logger.info(f"recipe/basket{context.basket_index}/state {DryRecipeFsmState.MOVE_TO_FRYER}")
 
@@ -321,6 +332,7 @@ class DryMoveToFryStrategy(Strategy):
 class DryFryStrategy(Strategy):
     def prepare(self, context: DryRecipeContext, **kwargs):
         ''' States to bb '''
+        _log_strategy_activation(context, self.__class__.__name__)
         bb.set(f"recipe/basket{context.basket_index}/state", DryRecipeFsmState.FRY)
 
         Logger.info(f"{get_time()}: [Basket {context.basket_index} FSM] Enter {self.__class__.__name__} State.")
@@ -351,6 +363,7 @@ class DryFryStrategy(Strategy):
 class DryShakeStrategy(Strategy):
     def prepare(self, context: DryRecipeContext, **kwargs):
         ''' States to bb '''
+        _log_strategy_activation(context, self.__class__.__name__)
         bb.set(f"recipe/basket{context.basket_index}/state", DryRecipeFsmState.SHAKE)
         context.last_shake_done_time = time.time()
 
@@ -395,6 +408,7 @@ class DryShakeStrategy(Strategy):
 class DryMoveFromFryStrategy(Strategy):
     def prepare(self, context: DryRecipeContext, **kwargs):
         ''' States to bb '''
+        _log_strategy_activation(context, self.__class__.__name__)
         bb.set(f"recipe/basket{context.basket_index}/state", DryRecipeFsmState.MOVE_FROM_FRYER)
 
         Logger.info(f"{get_time()}: [Basket {context.basket_index} FSM] Enter {self.__class__.__name__} State.")
@@ -448,6 +462,7 @@ class DryMoveFromFryStrategy(Strategy):
 
 class DryFinishStrategy(Strategy):
     def prepare(self, context: DryRecipeContext, **kwargs):
+        _log_strategy_activation(context, self.__class__.__name__)
         if context.total_elapsed_at_pickup > 0:
             end_time = datetime.fromtimestamp(context.cooking_start_time + context.total_elapsed_at_pickup)
         else:

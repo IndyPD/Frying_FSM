@@ -986,12 +986,12 @@ class RobotCommunication:
             self.last_beep_time = current_time
 
         try:
-            # di = self.indy.get_di()['signals']
-            do = self.indy.get_do()['signals']
+            di = self.indy.get_di()['signals']
+            # do = self.indy.get_do()['signals']
             # 항상 라이다 센서 상태를 읽고 blackboard에 업데이트
-            is_di0_on = self.get_dio_channel(do, self.lidar_warning_channel) == 1
-            is_di1_on = self.get_dio_channel(do, self.lidar_protective_channel) == 1
-            is_di2_on = self.get_dio_channel(do, self.lidar_ossd_channel) == 1
+            is_di0_on = self.get_dio_channel(di, self.lidar_warning_channel) == 1
+            is_di1_on = self.get_dio_channel(di, self.lidar_protective_channel) == 1
+            is_di2_on = self.get_dio_channel(di, self.lidar_ossd_channel) == 1
 
             # ========================================
             # Lidar 재시작 버튼의 rising-edge 감지 (개선됨)
