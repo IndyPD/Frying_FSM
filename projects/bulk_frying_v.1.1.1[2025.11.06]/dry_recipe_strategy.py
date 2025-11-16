@@ -432,6 +432,10 @@ class DryMoveFromFryStrategy(Strategy):
 
             if context.cancellation_in_progress:
                 bb.set(f"ui/reset/fryer{context.fryer_index}/cancel", True)
+                # 현재 ui/command/fryer/cancel 값 로깅
+                current_cancel_value = bb.get(f"ui/command/fryer{context.fryer_index}/cancel")
+                Logger.info(f"{get_time()}: [Basket {context.basket_index} FSM] Resetting ui/command/fryer{context.fryer_index}/cancel from {current_cancel_value} to 0.")
+                bb.set(f"ui/command/fryer{context.fryer_index}/cancel", 0) # Reset the command
                 context.cancellation_in_progress = False
 
             return DryRecipeFsmEvent.MOTION_DONE
