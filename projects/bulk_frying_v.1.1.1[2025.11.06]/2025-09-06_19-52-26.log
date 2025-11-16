@@ -1,0 +1,600 @@
+[2025-09-06|19:52:26][INFO]  Blackboard initialized from projects/bulk_frying/configs/blackboard.json
+[2025-09-06|19:52:29][INFO]  DEBUG: cooking_logger.py module is being loaded.
+[2025-09-06|19:52:29][INFO]  IndyCare MQTT logging is disabled.
+[2025-09-06|19:52:29][INFO]  [SYSTEM] Starting bulk_frying System...
+[2025-09-06|19:52:29][INFO]  Init AppCommunication
+[2025-09-06|19:52:29][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: Program is NOT running PROG_IDLE.
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Robot FSM] Enter NotReadyStrategy State.
+[2025-09-06|19:52:29][INFO]  robot fsm run
+[2025-09-06|19:52:29][INFO]  ProcessManager initialized with fry_type: dry
+[2025-09-06|19:52:29][INFO]  dryfsm 1
+[2025-09-06|19:52:29][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Robot FSM] Exit NotReadyStrategy State.
+[2025-09-06|19:52:29][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: Program is NOT running PROG_IDLE.
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dryfsm 2
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dryfsm 3
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dryfsm 4
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dryfsm 5
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dryfsm 6
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dryfsm 7
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dryfsm 8
+[2025-09-06|19:52:29][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:29][INFO]  2025-09-06 19:52:29: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:29][INFO]  dry fsm run
+[2025-09-06|19:52:29][INFO]  1 fryer Index : 1
+[2025-09-06|19:52:29][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:30][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:30][INFO]  2025-09-06 19:52:30: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:30][INFO]  3 fryer Index : 1
+[2025-09-06|19:52:30][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:30][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:30][INFO]  2025-09-06 19:52:30: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:30][INFO]  6 fryer Index : 4
+[2025-09-06|19:52:30][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:30][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:30][INFO]  2025-09-06 19:52:30: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:30][INFO]  8 fryer Index : 4
+[2025-09-06|19:52:30][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:30][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:30][INFO]  2025-09-06 19:52:30: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:30][INFO]  wet fsm run
+[2025-09-06|19:52:30][INFO]  [ProcessManager Init] Current Working Directory: /home/user/dev/runtest/Release/codex_agents_indycare
+[2025-09-06|19:52:30][INFO]  [ProcessManager Init] Attempting to load config from: /home/user/dev/runtest/Release/codex_agents_indycare/projects/bulk_frying/configs/app_config.json
+[2025-09-06|19:52:30][INFO]  [ProcessManager Init] Extracted eco_sensor_config: {'enabled': False, 'communication_type': 'socket', 'ip': '192.168.0.2', 'port': 5000, 'serial_port': '/dev/ttyUSB0', 'read_interval_minutes': 10, 'send_on_startup': True, 'max_retry_attempts': 3, 'retry_delay_seconds': 5}
+[2025-09-06|19:52:30][WARN]  [ProcessManager Init] EcoSensor is not enabled or config not found. Skipping initialization.
+[2025-09-06|19:52:30][INFO]  EcoSensor: Will send data immediately on first run.
+[2025-09-06|19:52:30][INFO]  [SYSTEM] bulk_frying system initialized. Running...
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [ProcessManager] Reset all recipes!
+[2025-09-06|19:52:49][INFO]  [SYSTEM] [DEBUG] Received request for full FSM reset.
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: Program is NOT running PROG_IDLE.
+[2025-09-06|19:52:49][INFO]  [SYSTEM] [DEBUG] Re-initializing all FSMs without waiting for old threads.
+[2025-09-06|19:52:49][INFO]  RobotFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  RobotFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: Program is NOT running PROG_IDLE.
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Robot FSM] Enter NotReadyStrategy State.
+[2025-09-06|19:52:49][INFO]  [SYSTEM] [DEBUG] Robot FSM re-initialized.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Robot FSM] Exit NotReadyStrategy State.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: Program is NOT running PROG_IDLE.
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  dryfsm 1
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  dryfsm 2
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  dryfsm 3
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  dryfsm 4
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  dryfsm 5
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  dryfsm 6
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  dryfsm 7
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  dryfsm 8
+[2025-09-06|19:52:49][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:52:49][INFO]  2025-09-06 19:52:49: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-06|19:52:49][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-06|19:52:49][INFO]  1 fryer Index : 1
+[2025-09-06|19:52:50][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:50][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:50][INFO]  2025-09-06 19:52:50: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:50][INFO]  3 fryer Index : 1
+[2025-09-06|19:52:50][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:50][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:50][INFO]  2025-09-06 19:52:50: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:50][INFO]  6 fryer Index : 4
+[2025-09-06|19:52:50][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:50][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:50][INFO]  2025-09-06 19:52:50: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:50][INFO]  8 fryer Index : 4
+[2025-09-06|19:52:50][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-06|19:52:50][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-09-06|19:52:50][INFO]  2025-09-06 19:52:50: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-09-06|19:52:50][INFO]  [SYSTEM] [DEBUG] All FSMs re-initialized.
+[2025-09-06|19:52:50][INFO]  [ProcessManager] `prog_stopped` flag has been manually reset.
+[2025-09-06|19:52:52][DEBUG] cooking_logger.py: send_recipe_list_mqtt() called with data: [{'label': '', 'time': 0}, {'label': '만두', 'time': 60}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}]
+[2025-09-06|19:52:52][INFO]  -------- ui/recipe1/reset/recipe_name 191 True
+[2025-09-06|19:52:52][INFO]  ---sdfsdfsdff=----------
+[2025-09-06|19:54:09][INFO]  2025-09-06 19:54:09: [Robot FSM] Program Start.
+[2025-09-06|19:54:09][ERROR] Start main program
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Wait for main program running
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Program is NOT running PROG_IDLE.
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Wait for main program running
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Program is NOT running PROG_IDLE.
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Wait for main program running
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Program is NOT running PROG_IDLE.
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Wait for main program running
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Program is NOT running PROG_IDLE.
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: Wait for main program running
+[2025-09-06|19:54:10][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-09-06|19:54:10][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-09-06|19:54:10][INFO]  2025-09-06 19:54:10: [Robot FSM] Start motion True move_to_ready  
+[2025-09-06|19:54:10][INFO]  Command I600 : 100
+[2025-09-06|19:54:12][INFO]  2025-09-06 19:54:12: [Robot FSM] Finish motion move_to_ready
+[2025-09-06|19:54:12][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_TO_READY
+[2025-09-06|19:54:12][INFO]  2025-09-06 19:54:12: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-09-06|19:54:12][DEBUG] RobotFsmSequence: Enter new state READY_IDLE
+[2025-09-06|19:54:12][INFO]  2025-09-06 19:54:12: [Robot FSM] Enter ReadyIdleStrategy State.
+[2025-09-06|19:54:12][INFO]  Command I600 : 0
+[2025-09-06|19:54:18][INFO]  [Basket 2] Waiting for recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  [Basket 2] Acquired recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  [Basket 3] Waiting for recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  [Basket 1] Waiting for recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  [Basket 2] Releasing recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  [Basket 3] Acquired recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 2 FSM] Assign new menu 1
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:18][INFO]  [Basket 3] Releasing recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 2 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 2 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 2 FSM] Start cooking.
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 3 FSM] Assign new menu 1
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 3 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 3 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:18][INFO]  [Basket 1] Acquired recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  [Basket 1] Releasing recipe assignment lock.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 2 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 1 FSM] Assign new menu 1
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 2 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:54:18][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 1 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:18][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:54:18][INFO]  [Debug] Basket 2: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:18][INFO]  trigger_to_fryer_motion 2
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [ProcessManager] Trigger move_to_fryer motion [FSM 2, Basket 2, Fryer 2]
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 1 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 1 FSM] Start cooking.
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:54:18][DEBUG] RobotFsmSequence: Trigger Event RUN_BASKET_TO_FRYER on READY_IDLE
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 1 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:18][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Robot FSM] Exiting ReadyIdleStrategy State.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Basket 1 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:54:18][INFO]  [Debug] Basket 1: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:54:18][DEBUG] RobotFsmSequence: Enter new state MOVE_BASKET_TO_FRYER
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Robot FSM] Enter MoveBasketToFryerStrategy State.
+[2025-09-06|19:54:18][INFO]  2025-09-06 19:54:18: [Robot FSM] Start motion move_to_fryer with [basket 2, fryer 2]
+[2025-09-06|19:54:18][INFO]  basket_to_fryer 312
+[2025-09-06|19:54:18][INFO]  Command I600 : 312
+[2025-09-06|19:54:19][INFO]  [Basket 6] Waiting for recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  [Basket 4] Waiting for recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  [Basket 6] Acquired recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  [Basket 5] Waiting for recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  [Basket 8] Waiting for recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  [Basket 7] Waiting for recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  [Basket 6] Releasing recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 6 FSM] Assign new menu 1
+[2025-09-06|19:54:19][INFO]  [Basket 4] Acquired recipe assignment lock.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:19][INFO]  [Basket 4] Releasing recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 6 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:19][INFO]  [Basket 5] Acquired recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 4 FSM] Assign new menu 1
+[2025-09-06|19:54:19][INFO]  [Basket 5] Releasing recipe assignment lock.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 6 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 6 FSM] Start cooking.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 4 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 5 FSM] Assign new menu 1
+[2025-09-06|19:54:19][INFO]  [Basket 8] Acquired recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 6 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 4 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 5 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:19][INFO]  [Basket 8] Releasing recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 6 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:19][INFO]  [Debug] Basket 6: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 5 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 8 FSM] Assign new menu 1
+[2025-09-06|19:54:19][INFO]  [Basket 7] Acquired recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 5 FSM] Start cooking.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 5 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 8 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 5 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 8 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:19][INFO]  [Debug] Basket 5: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:54:19][INFO]  [Basket 7] Releasing recipe assignment lock.
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 7 FSM] Assign new menu 1
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 7 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:54:19][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:54:19][INFO]  2025-09-06 19:54:19: [Basket 7 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:54:53][INFO]  2025-09-06 19:54:53: [Basket 5 FSM] Cancel basket by App.
+[2025-09-06|19:54:53][DEBUG] DryRecipeFsmSequence: Trigger Event RESET_MENU on MOVE_TO_FRYER
+[2025-09-06|19:54:53][INFO]  2025-09-06 19:54:53: [Basket 5 FSM] Exit DryMoveToFryStrategy State.
+[2025-09-06|19:54:53][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:54:53][INFO]  2025-09-06 19:54:53: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:54:55][INFO]  2025-09-06 19:54:55: [Basket 6 FSM] Cancel basket by App.
+[2025-09-06|19:54:55][DEBUG] DryRecipeFsmSequence: Trigger Event RESET_MENU on MOVE_TO_FRYER
+[2025-09-06|19:54:55][INFO]  2025-09-06 19:54:55: [Basket 6 FSM] Exit DryMoveToFryStrategy State.
+[2025-09-06|19:54:55][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:54:55][INFO]  2025-09-06 19:54:55: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:54:56][INFO]  2025-09-06 19:54:56: [Basket 7 FSM] Start cooking.
+[2025-09-06|19:54:56][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:54:56][INFO]  2025-09-06 19:54:56: [Basket 7 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:56][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:54:56][INFO]  2025-09-06 19:54:56: [Basket 7 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:54:56][INFO]  [Debug] Basket 7: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:54:56][INFO]  2025-09-06 19:54:56: [Basket 3 FSM] Cancel basket by App.
+[2025-09-06|19:54:56][DEBUG] DryRecipeFsmSequence: Trigger Event RESET_MENU on COOKING_READY
+[2025-09-06|19:54:56][INFO]  2025-09-06 19:54:56: [Basket 3 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:56][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:54:56][INFO]  2025-09-06 19:54:56: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:54:58][INFO]  2025-09-06 19:54:58: [Basket 4 FSM] Cancel basket by App.
+[2025-09-06|19:54:58][DEBUG] DryRecipeFsmSequence: Trigger Event RESET_MENU on COOKING_READY
+[2025-09-06|19:54:58][INFO]  2025-09-06 19:54:58: [Basket 4 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:58][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:54:58][INFO]  2025-09-06 19:54:58: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:54:58][INFO]  2025-09-06 19:54:58: [Basket 8 FSM] Start cooking.
+[2025-09-06|19:54:58][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:54:58][INFO]  2025-09-06 19:54:58: [Basket 8 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:54:58][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:54:58][INFO]  2025-09-06 19:54:58: [Basket 8 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:54:58][INFO]  [Debug] Basket 8: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:55:01][INFO]  2025-09-06 19:55:01: [Robot FSM] Finish motion move_to_fryer with [basket 2, fryer 2]
+[2025-09-06|19:55:01][INFO]  2025-09-06 19:55:01: [Basket 2 FSM] Motion move_to_fryer done (0)
+[2025-09-06|19:55:01][DEBUG] DryRecipeFsmSequence: Trigger Event MOTION_DONE on MOVE_TO_FRYER
+[2025-09-06|19:55:01][INFO]  2025-09-06 19:55:01: [Basket 2 FSM] Exit DryMoveToFryStrategy State.
+[2025-09-06|19:55:01][DEBUG] DryRecipeFsmSequence: Enter new state FRY
+[2025-09-06|19:55:01][INFO]  2025-09-06 19:55:01: [Basket 2 FSM] Enter DryFryStrategy State.
+[2025-09-06|19:55:01][INFO]  Command I600 : 0
+[2025-09-06|19:55:02][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_BASKET_TO_FRYER
+[2025-09-06|19:55:02][INFO]  2025-09-06 19:55:02: Exit MoveBasketToFryerStrategy State.
+[2025-09-06|19:55:02][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-09-06|19:55:02][INFO]  2025-09-06 19:55:02: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-09-06|19:55:02][INFO]  2025-09-06 19:55:02: [Robot FSM] Start motion False move_to_ready  
+[2025-09-06|19:55:02][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_TO_READY
+[2025-09-06|19:55:02][INFO]  2025-09-06 19:55:02: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-09-06|19:55:02][DEBUG] RobotFsmSequence: Enter new state READY_IDLE
+[2025-09-06|19:55:02][INFO]  2025-09-06 19:55:02: [Robot FSM] Enter ReadyIdleStrategy State.
+[2025-09-06|19:55:03][INFO]  2025-09-06 19:55:03: [Basket 7 FSM] Cancel basket by App.
+[2025-09-06|19:55:03][DEBUG] DryRecipeFsmSequence: Trigger Event RESET_MENU on MOVE_TO_FRYER
+[2025-09-06|19:55:03][INFO]  2025-09-06 19:55:03: [Basket 7 FSM] Exit DryMoveToFryStrategy State.
+[2025-09-06|19:55:03][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:55:03][INFO]  2025-09-06 19:55:03: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:55:06][INFO]  2025-09-06 19:55:06: [Basket 8 FSM] Cancel basket by App.
+[2025-09-06|19:55:06][DEBUG] DryRecipeFsmSequence: Trigger Event RESET_MENU on MOVE_TO_FRYER
+[2025-09-06|19:55:06][INFO]  2025-09-06 19:55:06: [Basket 8 FSM] Exit DryMoveToFryStrategy State.
+[2025-09-06|19:55:06][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:55:06][INFO]  2025-09-06 19:55:06: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:55:10][INFO]  2025-09-06 19:55:10: [Basket 1 FSM] Cancel basket by App.
+[2025-09-06|19:55:10][DEBUG] DryRecipeFsmSequence: Trigger Event RESET_MENU on MOVE_TO_FRYER
+[2025-09-06|19:55:10][INFO]  2025-09-06 19:55:10: [Basket 1 FSM] Exit DryMoveToFryStrategy State.
+[2025-09-06|19:55:10][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-06|19:55:10][INFO]  2025-09-06 19:55:10: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-09-06|19:55:16][INFO]  [Basket 4] Waiting for recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  [Basket 3] Waiting for recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  [Basket 5] Waiting for recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  [Basket 1] Waiting for recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  [Basket 4] Acquired recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  [Basket 4] Releasing recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 4 FSM] Assign new menu 1
+[2025-09-06|19:55:16][INFO]  [Basket 3] Acquired recipe assignment lock.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 4 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 4 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:55:16][INFO]  [Basket 3] Releasing recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 3 FSM] Assign new menu 1
+[2025-09-06|19:55:16][INFO]  [Basket 5] Acquired recipe assignment lock.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 3 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:55:16][INFO]  [Basket 5] Releasing recipe assignment lock.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:55:16][INFO]  [Basket 1] Acquired recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 5 FSM] Assign new menu 1
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 3 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:55:16][INFO]  [Basket 1] Releasing recipe assignment lock.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 3 FSM] Start cooking.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 5 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 1 FSM] Assign new menu 1
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 5 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 5 FSM] Start cooking.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 1 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 3 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 5 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:55:16][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 3 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:55:16][INFO]  [Debug] Basket 3: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 5 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:55:16][INFO]  [Debug] Basket 5: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:55:16][INFO]  2025-09-06 19:55:16: [Basket 1 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:55:17][INFO]  [Basket 7] Waiting for recipe assignment lock.
+[2025-09-06|19:55:17][INFO]  [Basket 7] Acquired recipe assignment lock.
+[2025-09-06|19:55:17][INFO]  [Basket 8] Waiting for recipe assignment lock.
+[2025-09-06|19:55:17][INFO]  [Basket 6] Waiting for recipe assignment lock.
+[2025-09-06|19:55:17][INFO]  [Basket 7] Releasing recipe assignment lock.
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 7 FSM] Assign new menu 1
+[2025-09-06|19:55:17][INFO]  [Basket 8] Acquired recipe assignment lock.
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 7 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:55:17][INFO]  [Basket 8] Releasing recipe assignment lock.
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 8 FSM] Assign new menu 1
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:55:17][INFO]  [Basket 6] Acquired recipe assignment lock.
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 7 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 8 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:55:17][INFO]  [Basket 6] Releasing recipe assignment lock.
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 6 FSM] Assign new menu 1
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 8 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 8 FSM] Start cooking.
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 6 FSM] Exit DryNoMenuStrategy State.
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 8 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 6 FSM] Enter DryCookingReadyStrategy State.
+[2025-09-06|19:55:17][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:55:17][INFO]  2025-09-06 19:55:17: [Basket 8 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:55:17][INFO]  [Debug] Basket 8: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:55:17][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:17][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 35.3s | FinishRemain: 24.7s | Priority: 2
+[2025-09-06|19:55:18][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:18][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 35.8s | FinishRemain: 24.2s | Priority: 2
+[2025-09-06|19:55:18][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:18][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 36.3s | FinishRemain: 23.7s | Priority: 2
+[2025-09-06|19:55:19][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:19][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 36.8s | FinishRemain: 23.2s | Priority: 2
+[2025-09-06|19:55:19][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:19][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 37.3s | FinishRemain: 22.7s | Priority: 2
+[2025-09-06|19:55:19][INFO]  2025-09-06 19:55:19: [Basket 4 FSM] Start cooking.
+[2025-09-06|19:55:19][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-09-06|19:55:19][INFO]  2025-09-06 19:55:19: [Basket 4 FSM] Exit DryCookingReadyStrategy State.
+[2025-09-06|19:55:19][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-09-06|19:55:19][INFO]  2025-09-06 19:55:19: [Basket 4 FSM] Enter DryMoveToFryStrategy State.
+[2025-09-06|19:55:19][INFO]  [Debug] Basket 4: putin_shake=True, type=<class 'bool'>
+[2025-09-06|19:55:20][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:20][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 37.9s | FinishRemain: 22.1s | Priority: 2
+[2025-09-06|19:55:20][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:20][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 38.4s | FinishRemain: 21.6s | Priority: 2
+[2025-09-06|19:55:21][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:21][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 38.9s | FinishRemain: 21.1s | Priority: 2
+[2025-09-06|19:55:21][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:21][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 39.5s | FinishRemain: 20.5s | Priority: 2
+[2025-09-06|19:55:22][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:22][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 40.0s | FinishRemain: 20.0s | Priority: 2
+[2025-09-06|19:55:22][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:22][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 40.5s | FinishRemain: 19.5s | Priority: 2
+[2025-09-06|19:55:23][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:23][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 41.0s | FinishRemain: 19.0s | Priority: 2
+[2025-09-06|19:55:23][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:23][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 41.6s | FinishRemain: 18.4s | Priority: 2
+[2025-09-06|19:55:24][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:24][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 42.1s | FinishRemain: 17.9s | Priority: 2
+[2025-09-06|19:55:24][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:24][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 42.6s | FinishRemain: 17.4s | Priority: 2
+[2025-09-06|19:55:25][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:25][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 43.1s | FinishRemain: 16.9s | Priority: 2
+[2025-09-06|19:55:25][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:25][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 43.6s | FinishRemain: 16.4s | Priority: 2
+[2025-09-06|19:55:26][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:26][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 44.2s | FinishRemain: 15.8s | Priority: 2
+[2025-09-06|19:55:27][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:27][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 44.7s | FinishRemain: 15.3s | Priority: 2
+[2025-09-06|19:55:27][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:27][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 45.2s | FinishRemain: 14.8s | Priority: 2
+[2025-09-06|19:55:28][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:28][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 45.7s | FinishRemain: 14.3s | Priority: 2
+[2025-09-06|19:55:28][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:28][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 46.2s | FinishRemain: 13.8s | Priority: 2
+[2025-09-06|19:55:29][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:29][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 46.8s | FinishRemain: 13.2s | Priority: 2
+[2025-09-06|19:55:29][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:29][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 47.3s | FinishRemain: 12.7s | Priority: 2
+[2025-09-06|19:55:30][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:30][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 47.8s | FinishRemain: 12.2s | Priority: 2
+[2025-09-06|19:55:30][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:30][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 48.3s | FinishRemain: 11.7s | Priority: 2
+[2025-09-06|19:55:31][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:31][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 48.9s | FinishRemain: 11.1s | Priority: 2
+[2025-09-06|19:55:31][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:31][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 49.4s | FinishRemain: 10.6s | Priority: 2
+[2025-09-06|19:55:32][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:32][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 49.9s | FinishRemain: 10.1s | Priority: 2
+[2025-09-06|19:55:32][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:32][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 50.4s | FinishRemain: 9.6s | Priority: 2
+[2025-09-06|19:55:32][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:32][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:32][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:32][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:33][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 51.0s | FinishRemain: 9.0s | Priority: 2
+[2025-09-06|19:55:33][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:33][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 51.5s | FinishRemain: 8.5s | Priority: 2
+[2025-09-06|19:55:33][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:33][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:34][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 52.0s | FinishRemain: 8.0s | Priority: 2
+[2025-09-06|19:55:34][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:34][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 52.6s | FinishRemain: 7.4s | Priority: 2
+[2025-09-06|19:55:34][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:34][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:35][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:35][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 53.1s | FinishRemain: 6.9s | Priority: 2
+[2025-09-06|19:55:35][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:35][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:35][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:35][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:35][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:35][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 53.6s | FinishRemain: 6.4s | Priority: 2
+[2025-09-06|19:55:35][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:35][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:36][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:36][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:36][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:36][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 54.2s | FinishRemain: 5.8s | Priority: 2
+[2025-09-06|19:55:36][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:36][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:36][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:36][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:37][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 54.7s | FinishRemain: 5.3s | Priority: 2
+[2025-09-06|19:55:37][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:37][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 55.3s | FinishRemain: 4.7s | Priority: 2
+[2025-09-06|19:55:37][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:37][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:38][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 55.8s | FinishRemain: 4.2s | Priority: 2
+[2025-09-06|19:55:38][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:38][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 56.3s | FinishRemain: 3.7s | Priority: 2
+[2025-09-06|19:55:38][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:38][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:39][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 56.9s | FinishRemain: 3.1s | Priority: 2
+[2025-09-06|19:55:39][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:39][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 57.4s | FinishRemain: 2.6s | Priority: 2
+[2025-09-06|19:55:39][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:39][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:40][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 58.0s | FinishRemain: 2.0s | Priority: 2
+[2025-09-06|19:55:40][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:40][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 58.5s | FinishRemain: 1.5s | Priority: 2
+[2025-09-06|19:55:40][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:40][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:41][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 59.1s | FinishRemain: 0.9s | Priority: 2
+[2025-09-06|19:55:41][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:41][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: FRY | Shake_times : 0 | Elapsed: 59.6s | FinishRemain: 0.4s | Priority: 2
+[2025-09-06|19:55:41][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:41][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:42][DEBUG] DryRecipeFsmSequence: Trigger Event COOKING_TIME_DONE on FRY
+[2025-09-06|19:55:42][INFO]  2025-09-06 19:55:42: [Basket 2 FSM] Exit DryFryStrategy State.
+[2025-09-06|19:55:42][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_FROM_FRYER
+[2025-09-06|19:55:42][INFO]  2025-09-06 19:55:42: [Basket 2 FSM] Enter DryMoveFromFryStrategy State.
+[2025-09-06|19:55:42][INFO]  [PriorityScheduler] Current priority list:
+[2025-09-06|19:55:42][INFO]    - Basket 2 | Fryer: 2 | type: dry | State: MOVE_FROM_FRYER | Shake_times : 0 | Elapsed: 60.2s | FinishRemain: -0.2s | Priority: 1
+[2025-09-06|19:55:42][INFO]    - Basket 3 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:42][INFO]    - Basket 4 | Fryer: 2 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:42][INFO]    - Basket 5 | Fryer: 3 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:42][INFO]    - Basket 8 | Fryer: 4 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 60.0s | Priority: 3
+[2025-09-06|19:55:42][INFO]  [ProcessManager] Set int_var/pickup_target_fryer/val to 2
+[2025-09-06|19:55:42][INFO]  2025-09-06 19:55:42: [ProcessManager] Trigger move_from_fryer motion [FSM 2, Basket 2, Fryer 2]
+[2025-09-06|19:55:42][DEBUG] RobotFsmSequence: Trigger Event RUN_BASKET_FROM_FRYER on READY_IDLE
+[2025-09-06|19:55:42][INFO]  2025-09-06 19:55:42: [Robot FSM] Exiting ReadyIdleStrategy State.
+[2025-09-06|19:55:42][DEBUG] RobotFsmSequence: Enter new state MOVE_BASKET_FROM_FRYER
+[2025-09-06|19:55:42][INFO]  2025-09-06 19:55:42: [Robot FSM] Enter MoveBasketFromFryerStrategy State.
+[2025-09-06|19:55:42][INFO]  2025-09-06 19:55:42: [Robot FSM] Start motion move_from_fryer with [basket 2, fryer 2]
+[2025-09-06|19:55:42][DEBUG] 2025-09-06 19:55:42: [Robot FSM] Current int_var/cmd/val: 0, Setting to: 332
+[2025-09-06|19:55:42][INFO]  basket_from_fryer 332
+[2025-09-06|19:55:42][INFO]  Command I600 : 332
+[2025-09-06|19:55:55][INFO]  2025-09-06 19:55:55 : [Fryer 2 has received pickup singal 1.
+[2025-09-06|19:55:55][INFO]  2025-09-06 19:55:55: [Basket 2 FSM] Targeted pickup signal received. total_elapsed_at_pickup set to 73.11

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frying COCO Config</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Frying COCO Configuration</h1>
+    <form method="post" action="/update">
+
+        <!-- General -->
+        <h2>General</h2>
+
+        <div class="form-row">
+            <div class="form-group" style="flex: 2;">
+                <label>robot_ip</label>
+                <input type="text" name="robot_ip" value="{{ config.robot_ip }}">
+            </div>
+        </div>
+
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>home_pass_mode</label>
+                <div class="radio-toggle-group">
+                    <input type="radio" id="home_true" name="home_pass_mode" value="True" {% if config.home_pass_mode %}checked{% endif %}>
+                    <label for="home_true">True</label>
+                    <input type="radio" id="home_false" name="home_pass_mode" value="False" {% if not config.home_pass_mode %}checked{% endif %}>
+                    <label for="home_false">False</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>place_fool_proof</label>
+                <div class="radio-toggle-group">
+                    <input type="radio" id="place_true" name="place_fool_proof" value="True" {% if config.place_fool_proof %}checked{% endif %}>
+                    <label for="place_true">True</label>
+                    <input type="radio" id="place_false" name="place_fool_proof" value="False" {% if not config.place_fool_proof %}checked{% endif %}>
+                    <label for="place_false">False</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>maximum_shake</label>
+                <div class="radio-toggle-group">
+                    <input type="radio" id="shake_true" name="maximum_shake" value="True" {% if config.maximum_shake %}checked{% endif %}>
+                    <label for="shake_true">True</label>
+                    <input type="radio" id="shake_false" name="maximum_shake" value="False" {% if not config.maximum_shake %}checked{% endif %}>
+                    <label for="shake_false">False</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>grip_close_fail_fool_proof</label>
+                <div class="radio-toggle-group">
+                    <input type="radio" id="close_fail_on" name="grip_close_fail_fool_proof" value="True" {% if config.grip_close_fail_fool_proof %}checked{% endif %}>
+                    <label for="close_fail_on">True</label>
+                    <input type="radio" id="close_fail_off" name="grip_close_fail_fool_proof" value="False" {% if not config.grip_close_fail_fool_proof %}checked{% endif %}>
+                    <label for="close_fail_off">False</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>grip_open_fail_fool_proof</label>
+                <div class="radio-toggle-group">
+                    <input type="radio" id="open_fail_on" name="grip_open_fail_fool_proof" value="True" {% if config.grip_open_fail_fool_proof %}checked{% endif %}>
+                    <label for="open_fail_on">True</label>
+                    <input type="radio" id="open_fail_off" name="grip_open_fail_fool_proof" value="False" {% if not config.grip_open_fail_fool_proof %}checked{% endif %}>
+                    <label for="open_fail_off">False</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>auto_inspection</label>
+                <div class="radio-toggle-group">
+                    <input type="radio" id="auto_on" name="auto_inspection" value="True" {% if config.auto_inspection %}checked{% endif %}>
+                    <label for="auto_on">True</label>
+                    <input type="radio" id="auto_off" name="auto_inspection" value="False" {% if not config.auto_inspection %}checked{% endif %}>
+                    <label for="auto_off">False</label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Gripper -->
+        <h2>Gripper</h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>product</label>
+                <div class="radio-toggle-group">
+                    {% for opt in ["zimmer", "gimetic"] %}
+                    <input type="radio" id="product_{{ opt }}" name="gripper.product" value="{{ opt }}" {% if config.gripper.product == opt %}checked{% endif %}>
+                    <label for="product_{{ opt }}">{{ opt }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>transistor</label>
+                <div class="radio-toggle-group">
+                    {% for opt in ["NPN", "PNP"] %}
+                    <input type="radio" id="trans_{{ opt }}" name="gripper.transistor" value="{{ opt }}" {% if config.gripper.transistor == opt %}checked{% endif %}>
+                    <label for="trans_{{ opt }}">{{ opt }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>endtool_port</label>
+                <div class="radio-toggle-group">
+                    {% for opt in ["A", "B"] %}
+                    <input type="radio" id="port_{{ opt }}" name="gripper.endtool_port" value="{{ opt }}" {% if config.gripper.endtool_port == opt %}checked{% endif %}>
+                    <label for="port_{{ opt }}">{{ opt }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>ai_channel</label>  <!-- 🔼 moved up -->
+                <div class="radio-toggle-group">
+                    {% for i in [0, 1] %}
+                    <input type="radio" id="ai_{{ i }}" name="gripper.ai_channel" value="{{ i }}" {% if config.gripper.ai_channel == i %}checked{% endif %}>
+                    <label for="ai_{{ i }}">{{ i }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>open_channel</label>
+                <div class="radio-toggle-group">
+                    {% for i in [0, 1] %}
+                    <input type="radio" id="open_{{ i }}" name="gripper.open_channel" value="{{ i }}" {% if config.gripper.open_channel == i %}checked{% endif %}>
+                    <label for="open_{{ i }}">{{ i }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Gripper - Failure analysis parameter -->
+        <div class="form-row">
+            <div class="form-group">
+                <label>gripper_open_bound (low)</label>
+                <input type="number" name="gripper.open_bound.0" value="{{ config.gripper.open_bound[0] }}">
+            </div>
+            <div class="form-group">
+                <label>gripper_open_bound (high)</label>
+                <input type="number" name="gripper.open_bound.1" value="{{ config.gripper.open_bound[1] }}">
+            </div>
+            <div class="form-group">
+                <label>open_failure_duration</label>
+                <input type="number" name="gripper.open_failure_duration" value="{{ config.gripper.open_failure_duration }}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>gripper_close_bound (low)</label>
+                <input type="number" name="gripper.close_bound.0" value="{{ config.gripper.close_bound[0] }}">
+            </div>
+            <div class="form-group">
+                <label>gripper_close_bound (high)</label>
+                <input type="number" name="gripper.close_bound.1" value="{{ config.gripper.close_bound[1] }}">
+            </div>
+            <div class="form-group">
+                <label>close_failure_duration</label>
+                <input type="number" name="gripper.close_failure_duration" value="{{ config.gripper.close_failure_duration }}">
+            </div>
+            <div class="form-group">
+                <label>filter_alpha</label>
+                <input type="number" step="0.01" min="0" max="1" name="gripper.filter_alpha" value="{{ config.gripper.filter_alpha }}">
+            </div>
+        </div>
+
+        <!-- Switch Button -->
+        <h2>Switch Button</h2>
+        <div class="form-group">
+            <label>button_type</label>
+            <div class="radio-toggle-group">
+                {% for opt in ["toggle", "momentary"] %}
+                <input type="radio" id="btn_{{ opt }}" name="switch_button.button_type" value="{{ opt }}" {% if config.switch_button.button_type == opt %}checked{% endif %}>
+                <label for="btn_{{ opt }}">{{ opt }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>di_stop_channel</label>
+            <div class="radio-toggle-group">
+                {% for i in range(16) %}
+                <input type="radio" id="stop_{{ i }}" name="switch_button.di_stop_channel" value="{{ i }}" {% if config.switch_button.di_stop_channel == i %}checked{% endif %}>
+                <label for="stop_{{ i }}">{{ i }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>di_dt_channel</label>
+            <div class="radio-toggle-group">
+                {% for i in range(16) %}
+                <input type="radio" id="dt_{{ i }}" name="switch_button.di_dt_channel" value="{{ i }}" {% if config.switch_button.di_dt_channel == i %}checked{% endif %}>
+                <label for="dt_{{ i }}">{{ i }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Basket Sensors -->
+        <h2>Basket Sensors</h2>
+
+        <!-- Select number of sensors -->
+        <div class="form-group">
+            <label>num_basket_sensor</label>
+            <div class="radio-toggle-group">
+                {% for n in range(1, 9) %}
+                <input type="radio" id="sensor_count_{{ n }}" name="sensors.num_basket_sensor" value="{{ n }}" {% if config.sensors.num_basket_sensor == n %}checked{% endif %}>
+                <label for="sensor_count_{{ n }}">{{ n }}</label>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- For each active basket sensor -->
+        <div class="basket-group">
+            {% set count = config.sensors.num_basket_sensor %}
+            {% for i in range(1, count + 1) %}
+            <div class="basket-item">
+                <label>di_basket{{ i }}</label>
+                <div class="radio-toggle-group">
+                    {% for ch in range(16) %}
+                    <input type="radio" id="b{{ i }}_ch{{ ch }}" name="sensors.di_basket{{ i }}" value="{{ ch }}" {% if config.sensors["di_basket" ~ i] == ch %}checked{% endif %}>
+                    <label for="b{{ i }}_ch{{ ch }}">{{ ch }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Buzzer  -->
+        <h2>Buzzer</h2>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>do_buzzer_channel</label>
+                <div class="radio-toggle-group">
+                    {% for i in range(0, 16) %}
+                    <input type="radio" id="buzzer_{{ i }}" name="buzzer.do_buzzer_channel" value="{{ i }}" {% if config.buzzer.do_buzzer_channel == i %}checked{% endif %}>
+                    <label for="buzzer_{{ i }}">{{ i }}</label>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+
+        <input type="submit" value="Save Config">
+    </form>
+</div>
+</body>
+</html>

@@ -2,4 +2,8 @@
 *.zip
 
 # LOG 폴더 무시 (대소문자 구분)
-LOG/
+LOG/.DS_Store
+.DS_Store
+projects/**/.DS_Store
+
+LOG/*

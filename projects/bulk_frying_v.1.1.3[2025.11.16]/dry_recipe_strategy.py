@@ -433,6 +433,7 @@ class DryMoveFromFryStrategy(Strategy):
             if context.cancellation_in_progress:
                 bb.set(f"ui/reset/fryer{context.fryer_index}/cancel", True)
                 context.cancellation_in_progress = False
+                b
 
             return DryRecipeFsmEvent.MOTION_DONE
 
