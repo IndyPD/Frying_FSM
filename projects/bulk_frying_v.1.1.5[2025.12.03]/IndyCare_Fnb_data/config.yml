@@ -1,0 +1,12 @@
+# indycare config
+mqtt_device_id: indyfnbtest0000
+mqtt_broker_hostname: device.thingplus.net
+mqtt_broker_port: 1883
+mqtt_username: neuromeka
+mqtt_password: dali3254
+mqtt_topic_telemetry: v1/devices/me/telemetry
+mqtt_topic_attrubutes: v1/devices/me/attributes
+mqtt_transmit_period: 60 # seconds
+aws_hostname: https://neuromeka.thingplus.net/
+robot_sn: DB51I7E0C001
+robot_dof: 6

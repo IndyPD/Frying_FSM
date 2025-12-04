@@ -1,0 +1,2689 @@
+[2025-10-29|12:47:29][INFO]  Blackboard initialized from projects/bulk_frying/configs/blackboard.json
+[2025-10-29|12:47:33][INFO]  DEBUG: cooking_logger.py module is being loaded.
+[2025-10-29|12:47:33][INFO]  IndyCare MQTT logging is disabled.
+[2025-10-29|12:47:33][INFO]  [SYSTEM] Starting bulk_frying System...
+[2025-10-29|12:47:33][INFO]  Init AppCommunication
+[2025-10-29|12:47:33][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:33][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:33][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: Program is NOT running PROG_IDLE.
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Robot FSM] Enter NotReadyStrategy State.
+[2025-10-29|12:47:33][INFO]  robot fsm run
+[2025-10-29|12:47:33][INFO]  ProcessManager initialized with fry_type: dry
+[2025-10-29|12:47:33][INFO]  dryfsm 1
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][INFO]  dryfsm 2
+[2025-10-29|12:47:33][ERROR] 2025-10-29 12:47:33: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_OFF, violation_code=NOT_READY]
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][INFO]  dryfsm 3
+[2025-10-29|12:47:33][ERROR] 2025-10-29 12:47:33: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_OFF, violation_code=NOT_READY]
+[2025-10-29|12:47:33][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][INFO]  dryfsm 4
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Robot FSM] Exit NotReadyStrategy State.
+[2025-10-29|12:47:33][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: Program is NOT running PROG_IDLE.
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][INFO]  dryfsm 5
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][INFO]  dryfsm 6
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][INFO]  dryfsm 7
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][INFO]  dryfsm 8
+[2025-10-29|12:47:33][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|12:47:33][INFO]  2025-10-29 12:47:33: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|12:47:33][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:33][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:34][INFO]  dry fsm run
+[2025-10-29|12:47:34][INFO]  1 fryer Index : 1
+[2025-10-29|12:47:34][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|12:47:34][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-10-29|12:47:34][INFO]  2025-10-29 12:47:34: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|12:47:34][INFO]  3 fryer Index : 1
+[2025-10-29|12:47:34][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|12:47:34][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-10-29|12:47:34][INFO]  2025-10-29 12:47:34: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|12:47:34][INFO]  6 fryer Index : 4
+[2025-10-29|12:47:34][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|12:47:34][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-10-29|12:47:34][INFO]  2025-10-29 12:47:34: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|12:47:34][INFO]  8 fryer Index : 4
+[2025-10-29|12:47:34][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|12:47:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:34][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-10-29|12:47:34][INFO]  2025-10-29 12:47:34: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|12:47:34][INFO]  wet fsm run
+[2025-10-29|12:47:34][INFO]  [ProcessManager Init] Current Working Directory: /home/user/dev/runtest/Release/codex_agents_indycare
+[2025-10-29|12:47:34][INFO]  [ProcessManager Init] Attempting to load config from: /home/user/dev/runtest/Release/codex_agents_indycare/projects/bulk_frying/configs/app_config.json
+[2025-10-29|12:47:34][INFO]  [ProcessManager Init] Extracted eco_sensor_config: {'enabled': False, 'communication_type': 'socket', 'ip': '192.168.0.2', 'port': 5000, 'serial_port': '/dev/ttyUSB0', 'read_interval_minutes': 10, 'send_on_startup': True, 'max_retry_attempts': 3, 'retry_delay_seconds': 5}
+[2025-10-29|12:47:34][WARN]  [ProcessManager Init] EcoSensor is not enabled or config not found. Skipping initialization.
+[2025-10-29|12:47:34][INFO]  EcoSensor: Will send data immediately on first run.
+[2025-10-29|12:47:34][INFO]  [SYSTEM] bulk_frying system initialized. Running...
+[2025-10-29|12:47:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:47:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:47:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:47:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:12][INFO]  라이다 경고 영역(DI1) 침범. 속도를 30으로 변경합니다.
+[2025-10-29|12:48:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:18][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:18][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:18][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:19][INFO]  라이다 경고 영역(DI1) 침범. 속도를 30으로 변경합니다.
+[2025-10-29|12:48:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:28][INFO]  라이다 경고 영역(DI1) 침범. 속도를 30으로 변경합니다.
+[2025-10-29|12:48:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:33][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:33][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:48:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:48:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:48:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:18][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:18][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:18][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:18][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:18][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:18][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:49:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:49:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:49:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:11][INFO]  라이다 경고 영역(DI1) 침범. 속도를 30으로 변경합니다.
+[2025-10-29|12:50:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:18][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:18][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:18][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:18][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:18][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:18][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:19][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:19][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:19][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:20][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:20][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:20][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:21][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:21][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:21][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:22][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:22][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:22][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:23][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:23][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:23][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:24][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:24][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:24][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:25][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:25][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:25][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:26][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:26][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:26][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:27][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:27][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:27][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:28][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:28][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:28][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:29][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:29][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:29][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:30][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:30][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:30][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:31][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:31][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:31][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:32][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:32][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:32][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:33][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:33][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:33][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:33][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:33][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:33][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:33][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:33][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:33][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:34][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:34][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:34][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:35][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:35][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:35][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:36][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:36][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:36][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:37][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:37][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:37][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:38][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:38][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:38][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:39][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:39][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:39][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:40][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:40][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:40][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:41][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:41][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:41][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:42][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:42][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:42][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:43][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:43][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:43][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:44][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:44][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:44][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:45][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:45][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:45][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:46][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:46][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:46][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:47][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:47][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:47][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:48][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:48][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:48][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:49][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:49][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:49][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:50][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:50][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:50][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:51][INFO]  라이다 경고 영역(DI1) 침범. 속도를 30으로 변경합니다.
+[2025-10-29|12:50:51][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:51][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:51][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:52][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:52][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:52][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:53][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:53][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:53][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:54][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:54][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:54][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:55][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:55][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:55][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:56][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:56][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:56][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:57][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:57][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:57][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:58][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:58][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:58][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:50:59][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:50:59][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:50:59][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:00][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:00][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:00][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:01][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:01][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:01][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:02][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:02][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:02][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:03][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:03][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:03][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:04][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:04][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:04][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:05][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:05][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:05][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:06][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:06][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:06][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:07][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:07][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:07][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:08][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:08][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:08][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:09][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:09][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:09][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:10][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:10][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:10][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:11][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:11][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:11][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:12][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:12][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:12][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:13][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:13][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:13][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:14][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:14][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:14][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:15][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:15][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:15][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:16][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:16][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:16][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:17][ERROR] Try Reconnect to GRPCAppCommunication client
+[2025-10-29|12:51:17][ERROR] Error in GRPCAppCommunication
+[2025-10-29|12:51:17][ERROR] '/ui/reset/lidar_popup/done'
+[2025-10-29|12:51:17][ERROR] Try Reconnect to GRPCAppCommunication client

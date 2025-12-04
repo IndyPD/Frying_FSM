@@ -1,0 +1,885 @@
+[2025-09-11|09:35:16][INFO]  Blackboard initialized from projects/bulk_frying/configs/blackboard.json
+[2025-09-11|09:35:20][INFO]  DEBUG: cooking_logger.py module is being loaded.
+[2025-09-11|09:35:20][INFO]  IndyCare MQTT logging is disabled.
+[2025-09-11|09:35:20][INFO]  [SYSTEM] Starting bulk_frying System...
+[2025-09-11|09:35:20][INFO]  Init AppCommunication
+[2025-09-11|09:35:20][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Robot FSM] Enter NotReadyStrategy State.
+[2025-09-11|09:35:20][INFO]  robot fsm run
+[2025-09-11|09:35:20][INFO]  ProcessManager initialized with fry_type: dry
+[2025-09-11|09:35:20][INFO]  dryfsm 1
+[2025-09-11|09:35:20][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:20][INFO]  dryfsm 2
+[2025-09-11|09:35:20][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Robot FSM] Exit NotReadyStrategy State.
+[2025-09-11|09:35:20][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-11|09:35:20][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:20][INFO]  dryfsm 3
+[2025-09-11|09:35:20][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:20][INFO]  dryfsm 4
+[2025-09-11|09:35:20][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:20][INFO]  dryfsm 5
+[2025-09-11|09:35:20][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:20][INFO]  dryfsm 6
+[2025-09-11|09:35:20][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:20][INFO]  2025-09-11 09:35:20: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:20][INFO]  dryfsm 7
+[2025-09-11|09:35:21][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:21][INFO]  2025-09-11 09:35:21: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:21][INFO]  dryfsm 8
+[2025-09-11|09:35:21][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:21][INFO]  2025-09-11 09:35:21: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:21][INFO]  dry fsm run
+[2025-09-11|09:35:21][INFO]  1 fryer Index : 1
+[2025-09-11|09:35:21][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:21][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:21][INFO]  2025-09-11 09:35:21: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:21][INFO]  3 fryer Index : 1
+[2025-09-11|09:35:21][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:21][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:21][INFO]  2025-09-11 09:35:21: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:21][INFO]  6 fryer Index : 4
+[2025-09-11|09:35:21][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:21][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:21][INFO]  2025-09-11 09:35:21: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:21][INFO]  8 fryer Index : 4
+[2025-09-11|09:35:21][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:21][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:21][INFO]  2025-09-11 09:35:21: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:21][INFO]  wet fsm run
+[2025-09-11|09:35:21][INFO]  [ProcessManager Init] Current Working Directory: /home/user/dev/runtest/Release/codex_agents_indycare
+[2025-09-11|09:35:21][INFO]  [ProcessManager Init] Attempting to load config from: /home/user/dev/runtest/Release/codex_agents_indycare/projects/bulk_frying/configs/app_config.json
+[2025-09-11|09:35:21][INFO]  [ProcessManager Init] Extracted eco_sensor_config: {'enabled': False, 'communication_type': 'socket', 'ip': '192.168.0.2', 'port': 5000, 'serial_port': '/dev/ttyUSB0', 'read_interval_minutes': 10, 'send_on_startup': True, 'max_retry_attempts': 3, 'retry_delay_seconds': 5}
+[2025-09-11|09:35:21][WARN]  [ProcessManager Init] EcoSensor is not enabled or config not found. Skipping initialization.
+[2025-09-11|09:35:21][INFO]  EcoSensor: Will send data immediately on first run.
+[2025-09-11|09:35:21][INFO]  [SYSTEM] bulk_frying system initialized. Running...
+[2025-09-11|09:35:43][INFO]  UI Command : open - True
+[2025-09-11|09:35:43][INFO]  UI Command : open - True
+[2025-09-11|09:35:43][INFO]  UI Command : open - True
+[2025-09-11|09:35:43][INFO]  UI Command : open - True
+[2025-09-11|09:35:43][INFO]  UI Command : open - True
+[2025-09-11|09:35:43][INFO]  UI Command : open - True
+[2025-09-11|09:35:44][INFO]  UI Command : close - False
+[2025-09-11|09:35:44][INFO]  UI Command : close - False
+[2025-09-11|09:35:44][INFO]  UI Command : close - False
+[2025-09-11|09:35:44][INFO]  UI Command : close - False
+[2025-09-11|09:35:44][INFO]  UI Command : close - False
+[2025-09-11|09:35:44][INFO]  UI Command : close - False
+[2025-09-11|09:35:45][INFO]  UI Command : open - True
+[2025-09-11|09:35:46][INFO]  UI Command : open - True
+[2025-09-11|09:35:46][INFO]  UI Command : open - True
+[2025-09-11|09:35:46][INFO]  UI Command : open - True
+[2025-09-11|09:35:46][INFO]  UI Command : open - True
+[2025-09-11|09:35:46][INFO]  UI Command : open - True
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: [ProcessManager] Reset all recipes!
+[2025-09-11|09:35:52][INFO]  [SYSTEM] [DEBUG] Received request for full FSM reset.
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: Program is NOT running PROG_IDLE.
+[2025-09-11|09:35:52][INFO]  [SYSTEM] [DEBUG] Re-initializing all FSMs without waiting for old threads.
+[2025-09-11|09:35:52][INFO]  RobotFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  RobotFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: Program is NOT running PROG_IDLE.
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: [Robot FSM] Enter NotReadyStrategy State.
+[2025-09-11|09:35:52][INFO]  [SYSTEM] [DEBUG] Robot FSM re-initialized.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: [Robot FSM] Exit NotReadyStrategy State.
+[2025-09-11|09:35:52][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: Program is NOT running PROG_IDLE.
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:52][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:52][INFO]  dryfsm 1
+[2025-09-11|09:35:52][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:52][INFO]  dryfsm 2
+[2025-09-11|09:35:52][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:52][INFO]  dryfsm 3
+[2025-09-11|09:35:52][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:52][INFO]  2025-09-11 09:35:52: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:52][INFO]  dryfsm 4
+[2025-09-11|09:35:53][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:53][INFO]  dryfsm 5
+[2025-09-11|09:35:53][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:53][INFO]  dryfsm 6
+[2025-09-11|09:35:53][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:53][INFO]  dryfsm 7
+[2025-09-11|09:35:53][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:53][INFO]  dryfsm 8
+[2025-09-11|09:35:53][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:35:53][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:35:53][INFO]  1 fryer Index : 1
+[2025-09-11|09:35:53][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:53][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:53][INFO]  3 fryer Index : 1
+[2025-09-11|09:35:53][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:53][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:53][INFO]  6 fryer Index : 4
+[2025-09-11|09:35:53][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:53][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:53][INFO]  8 fryer Index : 4
+[2025-09-11|09:35:53][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:35:53][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:35:53][INFO]  2025-09-11 09:35:53: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:35:54][INFO]  [SYSTEM] [DEBUG] All FSMs re-initialized.
+[2025-09-11|09:35:54][INFO]  [ProcessManager] `prog_stopped` flag has been manually reset.
+[2025-09-11|09:35:59][DEBUG] cooking_logger.py: send_recipe_list_mqtt() called with data: [{'label': '', 'time': 0}, {'label': '만두', 'time': 300}, {'label': '후라이드', 'time': 390}, {'label': '치필링', 'time': 390}, {'label': '츄러스', 'time': 330}, {'label': '츄러스', 'time': 300}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}]
+[2025-09-11|09:35:59][INFO]  -------- ui/recipe1/reset/recipe_name 191 True
+[2025-09-11|09:35:59][INFO]  ---sdfsdfsdff=----------
+[2025-09-11|09:35:59][INFO]  -------- ui/recipe2/reset/recipe_name 192 True
+[2025-09-11|09:35:59][INFO]  ---sdfsdfsdff=----------
+[2025-09-11|09:35:59][INFO]  -------- ui/recipe3/reset/recipe_name 193 True
+[2025-09-11|09:35:59][INFO]  ---sdfsdfsdff=----------
+[2025-09-11|09:35:59][INFO]  -------- ui/recipe4/reset/recipe_name 194 True
+[2025-09-11|09:35:59][INFO]  ---sdfsdfsdff=----------
+[2025-09-11|09:35:59][INFO]  -------- ui/recipe5/reset/recipe_name 195 True
+[2025-09-11|09:35:59][INFO]  ---sdfsdfsdff=----------
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: [Robot FSM] Program Start.
+[2025-09-11|09:36:13][ERROR] Start main program
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Wait for main program running
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Wait for main program running
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Wait for main program running
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Wait for main program running
+[2025-09-11|09:36:13][INFO]  2025-09-11 09:36:13: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Wait for main program running
+[2025-09-11|09:36:14][INFO]  2025-09-11 09:36:14: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: Wait for main program running
+[2025-09-11|09:36:15][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-09-11|09:36:15][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-09-11|09:36:15][ERROR] 2025-09-11 09:36:15: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:15][DEBUG] RobotFsmSequence: Trigger Event ERROR_DETECT on MOVE_TO_READY
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-09-11|09:36:15][DEBUG] RobotFsmSequence: Enter new state ERROR
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: [Robot FSM] Violation code VIOLATION
+[2025-09-11|09:36:15][INFO]  2025-09-11 09:36:15: [Robot FSM] Enter ErrorStrategy State.
+[2025-09-11|09:36:15][INFO]  [DEBUG] stop_program: Sending stop command to Conty.
+[2025-09-11|09:36:15][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:36:16][INFO]  Stop program!!
+[2025-09-11|09:36:16][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:36:16][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:16][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:16][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:16][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:17][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:17][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:17][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:17][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:17][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:18][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:18][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:18][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:18][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:18][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:19][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:19][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:19][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:19][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:20][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:20][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:20][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:20][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:20][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:21][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:21][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:21][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:21][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:21][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:25][WARN]  [DEBUG] stop_program: Timeout waiting for Conty program to stop. Proceeding with reset anyway.
+[2025-09-11|09:36:25][DEBUG] RobotFsmSequence: Trigger Event DONE on ERROR
+[2025-09-11|09:36:25][INFO]  2025-09-11 09:36:25: [Robot FSM] Exit ErrorStrategy State.
+[2025-09-11|09:36:25][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-11|09:36:25][INFO]  2025-09-11 09:36:25: Program is NOT running PROG_STOPPING.
+[2025-09-11|09:36:25][INFO]  2025-09-11 09:36:25: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:30][ERROR] 2025-09-11 09:36:30: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: [Robot FSM] Program Start.
+[2025-09-11|09:36:34][ERROR] Start main program
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Wait for main program running
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Wait for main program running
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Wait for main program running
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Wait for main program running
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Wait for main program running
+[2025-09-11|09:36:34][INFO]  2025-09-11 09:36:34: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Wait for main program running
+[2025-09-11|09:36:35][INFO]  2025-09-11 09:36:35: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Program is NOT running PROG_IDLE.
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: Wait for main program running
+[2025-09-11|09:36:36][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-09-11|09:36:36][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-09-11|09:36:36][ERROR] 2025-09-11 09:36:36: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:36][DEBUG] RobotFsmSequence: Trigger Event ERROR_DETECT on MOVE_TO_READY
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-09-11|09:36:36][DEBUG] RobotFsmSequence: Enter new state ERROR
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: [Robot FSM] Violation code VIOLATION
+[2025-09-11|09:36:36][INFO]  2025-09-11 09:36:36: [Robot FSM] Enter ErrorStrategy State.
+[2025-09-11|09:36:36][INFO]  [DEBUG] stop_program: Sending stop command to Conty.
+[2025-09-11|09:36:36][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:36:37][INFO]  Stop program!!
+[2025-09-11|09:36:37][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:37][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:37][WARN]  [ProcessManager] Program stop detected. Resetting all motion triggers to prevent deadlock.
+[2025-09-11|09:36:37][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:37][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:38][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:38][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:38][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:38][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:38][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:39][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:40][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:40][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:40][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:40][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:40][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:41][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:41][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:41][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:41][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:41][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:42][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:42][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:42][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:42][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:42][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:43][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:43][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:43][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:43][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:44][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:44][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:44][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:44][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:44][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:45][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:45][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:45][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:45][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:45][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:46][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:46][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:46][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:46][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:36:46][WARN]  [DEBUG] stop_program: Timeout waiting for Conty program to stop. Proceeding with reset anyway.
+[2025-09-11|09:36:46][DEBUG] RobotFsmSequence: Trigger Event DONE on ERROR
+[2025-09-11|09:36:46][INFO]  2025-09-11 09:36:46: [Robot FSM] Exit ErrorStrategy State.
+[2025-09-11|09:36:46][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-11|09:36:46][INFO]  2025-09-11 09:36:46: Program is NOT running PROG_STOPPING.
+[2025-09-11|09:36:46][INFO]  2025-09-11 09:36:46: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-11|09:36:49][ERROR] 2025-09-11 09:36:49: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:49][ERROR] 2025-09-11 09:36:49: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:49][ERROR] 2025-09-11 09:36:49: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:49][ERROR] 2025-09-11 09:36:49: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:49][ERROR] 2025-09-11 09:36:49: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:49][ERROR] 2025-09-11 09:36:49: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:50][ERROR] 2025-09-11 09:36:50: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:50][ERROR] 2025-09-11 09:36:50: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:50][ERROR] 2025-09-11 09:36:50: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:50][ERROR] 2025-09-11 09:36:50: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:50][ERROR] 2025-09-11 09:36:50: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:36:50][ERROR] 2025-09-11 09:36:50: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:37:53][INFO]  2025-09-11 09:37:53: [Robot FSM] Program Start.
+[2025-09-11|09:37:53][ERROR] Start main program
+[2025-09-11|09:37:53][INFO]  2025-09-11 09:37:53: Wait for main program running
+[2025-09-11|09:37:53][INFO]  2025-09-11 09:37:53: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Wait for main program running
+[2025-09-11|09:37:54][INFO]  2025-09-11 09:37:54: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: [ProcessManager] Reset all recipes!
+[2025-09-11|09:37:55][INFO]  [SYSTEM] [DEBUG] Received request for full FSM reset.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  [SYSTEM] [DEBUG] Re-initializing all FSMs without waiting for old threads.
+[2025-09-11|09:37:55][INFO]  RobotFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Wait for main program running
+[2025-09-11|09:37:55][INFO]  2025-09-11 09:37:55: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Wait for main program running
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Wait for main program running
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Wait for main program running
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Wait for main program running
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Wait for main program running
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Program is NOT running PROG_IDLE.
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: Wait for main program running
+[2025-09-11|09:37:56][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-09-11|09:37:56][INFO]  RobotFsmSequence: FSM service thread stopped.
+[2025-09-11|09:37:56][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-09-11|09:37:56][INFO]  2025-09-11 09:37:56: [Robot FSM] Program is Running, Stop the program (NotReadyStrategy)
+[2025-09-11|09:37:56][INFO]  [DEBUG] stop_program: Sending stop command to Conty.
+[2025-09-11|09:37:56][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:37:56][INFO]  Stop program!!
+[2025-09-11|09:37:56][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:37:57][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:57][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:57][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:57][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:57][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:58][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:58][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:58][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:58][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:58][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:59][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:59][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:59][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:59][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:37:59][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:00][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:00][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:00][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:00][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:00][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:01][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:01][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:01][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:01][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:01][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:02][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:02][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:02][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:02][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:03][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:03][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:03][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:03][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:03][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:06][WARN]  [DEBUG] stop_program: Timeout waiting for Conty program to stop. Proceeding with reset anyway.
+[2025-09-11|09:38:06][INFO]  2025-09-11 09:38:06: [Robot FSM] Enter NotReadyStrategy State.
+[2025-09-11|09:38:06][INFO]  [SYSTEM] [DEBUG] Robot FSM re-initialized.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][INFO]  2025-09-11 09:38:06: [Robot FSM] Exit NotReadyStrategy State.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-11|09:38:06][INFO]  2025-09-11 09:38:06: Program is NOT running PROG_STOPPING.
+[2025-09-11|09:38:06][INFO]  2025-09-11 09:38:06: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:06][INFO]  dryfsm 1
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  dryfsm 2
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  dryfsm 3
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  dryfsm 4
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  dryfsm 5
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  dryfsm 6
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  dryfsm 7
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  dryfsm 8
+[2025-09-11|09:38:07][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-09-11|09:38:07][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-09-11|09:38:07][INFO]  1 fryer Index : 1
+[2025-09-11|09:38:07][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:38:07][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:38:07][INFO]  3 fryer Index : 1
+[2025-09-11|09:38:07][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:38:07][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:38:07][INFO]  6 fryer Index : 4
+[2025-09-11|09:38:07][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:38:07][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:38:07][INFO]  2025-09-11 09:38:07: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:38:07][INFO]  8 fryer Index : 4
+[2025-09-11|09:38:08][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-09-11|09:38:08][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-09-11|09:38:08][INFO]  2025-09-11 09:38:08: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-09-11|09:38:08][INFO]  [SYSTEM] [DEBUG] All FSMs re-initialized.
+[2025-09-11|09:38:08][INFO]  [ProcessManager] `prog_stopped` flag has been manually reset.
+[2025-09-11|09:38:09][ERROR] 2025-09-11 09:38:09: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:09][ERROR] 2025-09-11 09:38:09: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:09][ERROR] 2025-09-11 09:38:09: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:09][ERROR] 2025-09-11 09:38:09: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:09][ERROR] 2025-09-11 09:38:09: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:09][ERROR] 2025-09-11 09:38:09: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: [Robot FSM] Program Start.
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:19][ERROR] Start main program
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Wait for main program running
+[2025-09-11|09:38:19][INFO]  2025-09-11 09:38:19: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Wait for main program running
+[2025-09-11|09:38:20][INFO]  2025-09-11 09:38:20: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Wait for main program running
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Wait for main program running
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Wait for main program running
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Wait for main program running
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Wait for main program running
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Wait for main program running
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Program is NOT running PROG_IDLE.
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: Wait for main program running
+[2025-09-11|09:38:21][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-09-11|09:38:21][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-09-11|09:38:21][ERROR] 2025-09-11 09:38:21: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:21][DEBUG] RobotFsmSequence: Trigger Event ERROR_DETECT on MOVE_TO_READY
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-09-11|09:38:21][DEBUG] RobotFsmSequence: Enter new state ERROR
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: [Robot FSM] Violation code VIOLATION
+[2025-09-11|09:38:21][INFO]  2025-09-11 09:38:21: [Robot FSM] Enter ErrorStrategy State.
+[2025-09-11|09:38:21][INFO]  [DEBUG] stop_program: Sending stop command to Conty.
+[2025-09-11|09:38:21][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:38:21][INFO]  Stop program!!
+[2025-09-11|09:38:21][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:38:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:22][WARN]  [ProcessManager] Program stop detected. Resetting all motion triggers to prevent deadlock.
+[2025-09-11|09:38:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:22][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:23][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:24][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:25][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:26][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:26][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:26][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:26][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:26][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:27][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:27][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:27][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:27][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:27][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:28][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:28][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:28][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:28][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:29][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:29][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:29][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:29][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:29][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:30][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:30][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:30][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:30][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:30][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:31][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:31][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:31][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:31][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:38:31][WARN]  [DEBUG] stop_program: Timeout waiting for Conty program to stop. Proceeding with reset anyway.
+[2025-09-11|09:38:31][DEBUG] RobotFsmSequence: Trigger Event DONE on ERROR
+[2025-09-11|09:38:31][INFO]  2025-09-11 09:38:31: [Robot FSM] Exit ErrorStrategy State.
+[2025-09-11|09:38:31][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-11|09:38:31][INFO]  2025-09-11 09:38:31: Program is NOT running PROG_STOPPING.
+[2025-09-11|09:38:31][INFO]  2025-09-11 09:38:31: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:38:35][ERROR] 2025-09-11 09:38:35: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:00][INFO]  2025-09-11 09:40:00: [Robot FSM] Program Start.
+[2025-09-11|09:40:00][ERROR] Start main program
+[2025-09-11|09:40:00][INFO]  2025-09-11 09:40:00: Wait for main program running
+[2025-09-11|09:40:00][INFO]  2025-09-11 09:40:00: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:00][INFO]  2025-09-11 09:40:00: Wait for main program running
+[2025-09-11|09:40:00][INFO]  2025-09-11 09:40:00: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:00][INFO]  2025-09-11 09:40:00: Wait for main program running
+[2025-09-11|09:40:00][INFO]  2025-09-11 09:40:00: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Wait for main program running
+[2025-09-11|09:40:01][INFO]  2025-09-11 09:40:01: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Wait for main program running
+[2025-09-11|09:40:02][INFO]  2025-09-11 09:40:02: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Program is NOT running PROG_IDLE.
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: Wait for main program running
+[2025-09-11|09:40:03][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-09-11|09:40:03][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-09-11|09:40:03][ERROR] 2025-09-11 09:40:03: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:03][DEBUG] RobotFsmSequence: Trigger Event ERROR_DETECT on MOVE_TO_READY
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-09-11|09:40:03][DEBUG] RobotFsmSequence: Enter new state ERROR
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: [Robot FSM] Violation code VIOLATION
+[2025-09-11|09:40:03][INFO]  2025-09-11 09:40:03: [Robot FSM] Enter ErrorStrategy State.
+[2025-09-11|09:40:03][INFO]  [DEBUG] stop_program: Sending stop command to Conty.
+[2025-09-11|09:40:03][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:40:04][INFO]  Stop program!!
+[2025-09-11|09:40:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_RUNNING
+[2025-09-11|09:40:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:04][WARN]  [ProcessManager] Program stop detected. Resetting all motion triggers to prevent deadlock.
+[2025-09-11|09:40:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:04][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:05][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:06][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:07][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:07][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:07][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:07][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:08][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:08][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:08][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:08][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:08][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:09][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:09][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:09][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:09][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:09][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:10][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:10][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:10][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:10][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:10][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:11][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:11][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:11][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:11][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:11][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:12][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:12][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:12][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:12][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:13][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:13][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:13][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:13][INFO]  [DEBUG] stop_program: Waiting for Conty program to stop. Current state: PROG_STOPPING
+[2025-09-11|09:40:13][WARN]  [DEBUG] stop_program: Timeout waiting for Conty program to stop. Proceeding with reset anyway.
+[2025-09-11|09:40:13][DEBUG] RobotFsmSequence: Trigger Event DONE on ERROR
+[2025-09-11|09:40:13][INFO]  2025-09-11 09:40:13: [Robot FSM] Exit ErrorStrategy State.
+[2025-09-11|09:40:13][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-09-11|09:40:13][INFO]  2025-09-11 09:40:13: Program is NOT running PROG_STOPPING.
+[2025-09-11|09:40:13][INFO]  2025-09-11 09:40:13: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]
+[2025-09-11|09:40:24][ERROR] 2025-09-11 09:40:24: [Robot FSM] Violation detected [indy_state=OP_SYSTEM_RESET, violation_code=VIOLATION]

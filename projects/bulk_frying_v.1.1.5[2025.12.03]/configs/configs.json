@@ -1,0 +1,38 @@
+{
+    "robot_ip": "192.168.5.116",
+    "safety_plc_ip": "127.0.0.1",
+    "lidar_ip": "127.0.0.1",
+    "mqtt_ip": "127.0.0.1",
+    "home_pass_mode": true,
+    "place_fool_proof": true,
+    "grip_close_fail_fool_proof": true,
+    "grip_open_fail_fool_proof": false,
+    "maximum_shake": false,
+    "auto_inspection": false,
+    "gripper": {
+        "product": "zimmer",
+        "transistor": "PNP",
+        "endtool_port": "A",
+        "open_channel": 1,
+        "ai_channel": 0,
+        "filter_alpha": 0.9,
+        "open_bound": [
+            50,
+            200
+        ],
+        "close_bound": [
+            7500,
+            9600
+        ],
+        "open_failure_duration": 5,
+        "close_failure_duration": 5
+    },
+    "switch_button": {
+        "button_type": "toggle",
+        "di_stop_channel": 2,
+        "di_dt_channel": 3
+    },
+    "buzzer": {
+        "do_buzzer_channel": 0
+    }
+}

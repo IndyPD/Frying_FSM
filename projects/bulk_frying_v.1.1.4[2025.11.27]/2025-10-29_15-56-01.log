@@ -1,0 +1,1019 @@
+[2025-10-29|15:56:01][INFO]  Blackboard initialized from projects/bulk_frying/configs/blackboard.json
+[2025-10-29|15:56:04][INFO]  DEBUG: cooking_logger.py module is being loaded.
+[2025-10-29|15:56:04][INFO]  IndyCare MQTT logging is disabled.
+[2025-10-29|15:56:04][INFO]  [SYSTEM] Starting bulk_frying System...
+[2025-10-29|15:56:04][INFO]  Init AppCommunication
+[2025-10-29|15:56:04][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Robot FSM] Enter NotReadyStrategy State.
+[2025-10-29|15:56:04][INFO]  robot fsm run
+[2025-10-29|15:56:04][INFO]  ProcessManager initialized with fry_type: dry
+[2025-10-29|15:56:04][INFO]  dryfsm 1
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:04][INFO]  dryfsm 2
+[2025-10-29|15:56:04][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Robot FSM] Exit NotReadyStrategy State.
+[2025-10-29|15:56:04][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:04][INFO]  dryfsm 3
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:04][INFO]  dryfsm 4
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:04][INFO]  dryfsm 5
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:04][INFO]  dryfsm 6
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:04][INFO]  dryfsm 7
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:04][INFO]  dryfsm 8
+[2025-10-29|15:56:04][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:04][INFO]  2025-10-29 15:56:04: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:05][INFO]  dry fsm run
+[2025-10-29|15:56:05][INFO]  1 fryer Index : 1
+[2025-10-29|15:56:05][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:05][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:05][INFO]  2025-10-29 15:56:05: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:05][INFO]  3 fryer Index : 1
+[2025-10-29|15:56:05][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:05][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:05][INFO]  2025-10-29 15:56:05: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:05][INFO]  6 fryer Index : 4
+[2025-10-29|15:56:05][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:05][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:05][INFO]  2025-10-29 15:56:05: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:05][INFO]  8 fryer Index : 4
+[2025-10-29|15:56:05][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:05][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:05][INFO]  2025-10-29 15:56:05: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:05][INFO]  wet fsm run
+[2025-10-29|15:56:05][INFO]  [ProcessManager Init] Current Working Directory: /home/user/dev/runtest/Release/codex_agents_indycare
+[2025-10-29|15:56:05][INFO]  [ProcessManager Init] Attempting to load config from: /home/user/dev/runtest/Release/codex_agents_indycare/projects/bulk_frying/configs/app_config.json
+[2025-10-29|15:56:05][INFO]  [ProcessManager Init] Extracted eco_sensor_config: {'enabled': False, 'communication_type': 'socket', 'ip': '192.168.0.2', 'port': 5000, 'serial_port': '/dev/ttyUSB0', 'read_interval_minutes': 10, 'send_on_startup': True, 'max_retry_attempts': 3, 'retry_delay_seconds': 5}
+[2025-10-29|15:56:05][WARN]  [ProcessManager Init] EcoSensor is not enabled or config not found. Skipping initialization.
+[2025-10-29|15:56:05][INFO]  EcoSensor: Will send data immediately on first run.
+[2025-10-29|15:56:05][INFO]  [SYSTEM] bulk_frying system initialized. Running...
+[2025-10-29|15:56:23][INFO]  2025-10-29 15:56:23: [ProcessManager] Reset all recipes!
+[2025-10-29|15:56:23][INFO]  [SYSTEM] [DEBUG] Received request for full FSM reset.
+[2025-10-29|15:56:23][INFO]  2025-10-29 15:56:23: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:23][INFO]  [SYSTEM] [DEBUG] Re-initializing all FSMs without waiting for old threads.
+[2025-10-29|15:56:23][INFO]  RobotFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:23][INFO]  RobotFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:23][DEBUG] RobotFsmSequence: Enter new state NOT_READY
+[2025-10-29|15:56:23][INFO]  2025-10-29 15:56:23: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:23][INFO]  2025-10-29 15:56:23: [Robot FSM] Enter NotReadyStrategy State.
+[2025-10-29|15:56:23][INFO]  [SYSTEM] [DEBUG] Robot FSM re-initialized.
+[2025-10-29|15:56:23][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:23][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:23][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:23][DEBUG] RobotFsmSequence: Trigger Event DONE on NOT_READY
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: [Robot FSM] Exit NotReadyStrategy State.
+[2025-10-29|15:56:24][DEBUG] RobotFsmSequence: Enter new state NOT_READY_IDLE
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: [Robot FSM] Enter NotReadyIdleStrategy State.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:24][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:24][INFO]  dryfsm 1
+[2025-10-29|15:56:24][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: [Basket 1 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:24][INFO]  dryfsm 2
+[2025-10-29|15:56:24][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: [Basket 2 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:24][INFO]  dryfsm 3
+[2025-10-29|15:56:24][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: [Basket 3 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:24][INFO]  dryfsm 4
+[2025-10-29|15:56:24][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: [Basket 4 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:24][INFO]  dryfsm 5
+[2025-10-29|15:56:24][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:24][INFO]  2025-10-29 15:56:24: [Basket 5 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:24][INFO]  dryfsm 6
+[2025-10-29|15:56:25][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:25][INFO]  2025-10-29 15:56:25: [Basket 6 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:25][INFO]  dryfsm 7
+[2025-10-29|15:56:25][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:25][INFO]  2025-10-29 15:56:25: [Basket 7 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:25][INFO]  dryfsm 8
+[2025-10-29|15:56:25][DEBUG] DryRecipeFsmSequence: Enter new state NO_MENU
+[2025-10-29|15:56:25][INFO]  2025-10-29 15:56:25: [Basket 8 FSM] Enter DryNoMenuStrategy State.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|15:56:25][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|15:56:25][INFO]  1 fryer Index : 1
+[2025-10-29|15:56:25][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:25][INFO]  [SPECIAL] Basket 1: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:25][INFO]  2025-10-29 15:56:25: [Basket 1 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:25][INFO]  3 fryer Index : 1
+[2025-10-29|15:56:25][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:25][INFO]  [SPECIAL] Basket 3: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:25][INFO]  2025-10-29 15:56:25: [Basket 3 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:25][INFO]  6 fryer Index : 4
+[2025-10-29|15:56:25][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:25][INFO]  [SPECIAL] Basket 6: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:25][INFO]  2025-10-29 15:56:25: [Basket 6 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:25][INFO]  8 fryer Index : 4
+[2025-10-29|15:56:25][DEBUG] WetRecipeFsmSequence: Enter new state WAIT_PUTIN
+[2025-10-29|15:56:25][INFO]  [SPECIAL] Basket 8: Reset putin_shake=0, shake_done=0
+[2025-10-29|15:56:25][INFO]  2025-10-29 15:56:25: [Basket 8 FSM] Enter WaitPutinStrategy State.
+[2025-10-29|15:56:26][INFO]  [SYSTEM] [DEBUG] All FSMs re-initialized.
+[2025-10-29|15:56:26][INFO]  [ProcessManager] `prog_stopped` flag has been manually reset.
+[2025-10-29|15:56:26][DEBUG] cooking_logger.py: send_recipe_list_mqtt() called with data: [{'label': '', 'time': 0}, {'label': '김말이', 'time': 180}, {'label': '1분', 'time': 60}, {'label': '7분', 'time': 420}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}, {'label': '', 'time': 0}]
+[2025-10-29|15:56:26][INFO]  -------- ui/recipe1/reset/recipe_name 191 True
+[2025-10-29|15:56:26][INFO]  ---sdfsdfsdff=----------
+[2025-10-29|15:56:26][INFO]  -------- ui/recipe2/reset/recipe_name 192 True
+[2025-10-29|15:56:26][INFO]  ---sdfsdfsdff=----------
+[2025-10-29|15:56:26][INFO]  -------- ui/recipe3/reset/recipe_name 193 True
+[2025-10-29|15:56:26][INFO]  ---sdfsdfsdff=----------
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: [Robot FSM] Program Start.
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Wait for main program running
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Wait for main program running
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Wait for main program running
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Wait for main program running
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:38][INFO]  Start main program
+[2025-10-29|15:56:38][INFO]  2025-10-29 15:56:38: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Wait for main program running
+[2025-10-29|15:56:39][INFO]  2025-10-29 15:56:39: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:40][INFO]  2025-10-29 15:56:40: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Wait for main program running
+[2025-10-29|15:56:41][INFO]  2025-10-29 15:56:41: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Wait for main program running
+[2025-10-29|15:56:42][INFO]  2025-10-29 15:56:42: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Wait for main program running
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Wait for main program running
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Wait for main program running
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Wait for main program running
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Wait for main program running
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Program is NOT running PROG_IDLE.
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: Wait for main program running
+[2025-10-29|15:56:43][DEBUG] RobotFsmSequence: Trigger Event START_PROGRAM on NOT_READY_IDLE
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: [Robot FSM] Exit NotReadyIdleStrategy State.
+[2025-10-29|15:56:43][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-10-29|15:56:43][INFO]  2025-10-29 15:56:43: [Robot FSM] Start motion True move_to_ready  
+[2025-10-29|15:56:43][INFO]  Command I600 : 100
+[2025-10-29|15:57:07][INFO]  라이다 주의 영역(DI0) 침범. 속도를 30으로 변경합니다.
+[2025-10-29|15:57:23][INFO]  2025-10-29 15:57:23: [Robot FSM] Finish motion move_to_ready
+[2025-10-29|15:57:23][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_TO_READY
+[2025-10-29|15:57:23][INFO]  2025-10-29 15:57:23: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-10-29|15:57:23][DEBUG] RobotFsmSequence: Enter new state READY_IDLE
+[2025-10-29|15:57:23][INFO]  2025-10-29 15:57:23: [Robot FSM] Enter ReadyIdleStrategy State.
+[2025-10-29|15:57:23][INFO]  Command I600 : 0
+[2025-10-29|15:58:50][INFO]  [Basket 1] Waiting for recipe assignment lock.
+[2025-10-29|15:58:50][INFO]  [Basket 1] Acquired recipe assignment lock.
+[2025-10-29|15:58:50][INFO]  [Basket 1] Releasing recipe assignment lock.
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Basket 1 FSM] Assign new menu 3
+[2025-10-29|15:58:50][DEBUG] DryRecipeFsmSequence: Trigger Event ASSIGN_MENU on NO_MENU
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Basket 1 FSM] Exit DryNoMenuStrategy State.
+[2025-10-29|15:58:50][DEBUG] DryRecipeFsmSequence: Enter new state COOKING_READY
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Basket 1 FSM] Enter DryCookingReadyStrategy State.
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Basket 1 FSM] Start cooking.
+[2025-10-29|15:58:50][DEBUG] DryRecipeFsmSequence: Trigger Event START_MENU on COOKING_READY
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Basket 1 FSM] Exit DryCookingReadyStrategy State.
+[2025-10-29|15:58:50][DEBUG] DryRecipeFsmSequence: Enter new state MOVE_TO_FRYER
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Basket 1 FSM] Enter DryMoveToFryStrategy State.
+[2025-10-29|15:58:50][INFO]  [Debug] Basket 1: putin_shake=True, type=<class 'bool'>
+[2025-10-29|15:58:50][INFO]  [PriorityScheduler] Current priority list:
+[2025-10-29|15:58:50][INFO]    - Basket 1 | Fryer: 1 | type: dry | State: MOVE_TO_FRYER | Shake_times : 0 | Elapsed: 0.0s | FinishRemain: 1000.0s | Priority: 3
+[2025-10-29|15:58:50][INFO]  trigger_to_fryer_motion 1
+[2025-10-29|15:58:50][DEBUG] RobotFsmSequence: Trigger Event RUN_BASKET_TO_FRYER on READY_IDLE
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [ProcessManager] Trigger move_to_fryer motion [FSM 1, Basket 1, Fryer 1]
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Robot FSM] Exiting ReadyIdleStrategy State.
+[2025-10-29|15:58:50][DEBUG] RobotFsmSequence: Enter new state MOVE_BASKET_TO_FRYER
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Robot FSM] Enter MoveBasketToFryerStrategy State.
+[2025-10-29|15:58:50][INFO]  2025-10-29 15:58:50: [Robot FSM] Start motion move_to_fryer with [basket 1, fryer 1]
+[2025-10-29|15:58:50][INFO]  basket_to_fryer 311
+[2025-10-29|15:58:50][INFO]  Command I600 : 311
+[2025-10-29|15:58:56][INFO]  라이다 경고 영역(DI1) 침범. 로봇을 정지합니다.
+[2025-10-29|15:59:01][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:01][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:01][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:01][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:01][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:01][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:01][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:01][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:01][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:02][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:02][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:02][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:02][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:02][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:03][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:03][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:03][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:03][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:04][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:04][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:04][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:04][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:04][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:05][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:05][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:05][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:05][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:05][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:05][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:05][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:05][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:05][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:05][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:05][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:05][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:06][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:06][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:06][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:06][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:06][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:06][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:06][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:06][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:06][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:06][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:06][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:06][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:06][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:06][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:06][WARN]  Lidar restart command received, but area is not safe.
+[2025-10-29|15:59:07][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:07][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:07][INFO]  Lidar restart approved.
+[2025-10-29|15:59:07][INFO]  라이다 주의 영역(DI0) 침범. 속도를 30으로 변경합니다.
+[2025-10-29|15:59:07][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:07][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:07][INFO]  Lidar restart approved.
+[2025-10-29|15:59:07][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:07][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:07][INFO]  Lidar restart approved.
+[2025-10-29|15:59:07][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:07][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:07][INFO]  Lidar restart approved.
+[2025-10-29|15:59:07][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:07][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:07][INFO]  Lidar restart approved.
+[2025-10-29|15:59:08][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:08][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:08][INFO]  Lidar restart approved.
+[2025-10-29|15:59:08][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:08][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:08][INFO]  Lidar restart approved.
+[2025-10-29|15:59:08][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:08][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:08][INFO]  Lidar restart approved.
+[2025-10-29|15:59:09][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:09][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:09][INFO]  Lidar restart approved.
+[2025-10-29|15:59:09][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:09][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:09][INFO]  Lidar restart approved.
+[2025-10-29|15:59:10][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:10][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:10][INFO]  Lidar restart approved.
+[2025-10-29|15:59:11][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:11][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:11][INFO]  Lidar restart approved.
+[2025-10-29|15:59:11][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:11][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:11][INFO]  Lidar restart approved.
+[2025-10-29|15:59:11][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:11][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:11][INFO]  Lidar restart approved.
+[2025-10-29|15:59:12][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:12][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:12][INFO]  Lidar restart approved.
+[2025-10-29|15:59:12][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:12][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:12][INFO]  Lidar restart approved.
+[2025-10-29|15:59:12][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:12][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:12][INFO]  Lidar restart approved.
+[2025-10-29|15:59:12][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:12][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:13][INFO]  Lidar restart approved.
+[2025-10-29|15:59:13][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:13][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:13][INFO]  Lidar restart approved.
+[2025-10-29|15:59:13][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:13][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:13][INFO]  Lidar restart approved.
+[2025-10-29|15:59:13][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:13][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:13][INFO]  Lidar restart approved.
+[2025-10-29|15:59:13][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:13][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:13][INFO]  Lidar restart approved.
+[2025-10-29|15:59:14][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:14][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:14][INFO]  Lidar restart approved.
+[2025-10-29|15:59:14][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:14][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:14][INFO]  Lidar restart approved.
+[2025-10-29|15:59:14][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:14][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:14][INFO]  Lidar restart approved.
+[2025-10-29|15:59:14][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:14][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:14][INFO]  Lidar restart approved.
+[2025-10-29|15:59:15][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:15][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:15][INFO]  Lidar restart approved.
+[2025-10-29|15:59:15][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:15][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:15][INFO]  Lidar restart approved.
+[2025-10-29|15:59:15][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:15][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:15][INFO]  Lidar restart approved.
+[2025-10-29|15:59:15][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:15][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:15][INFO]  Lidar restart approved.
+[2025-10-29|15:59:16][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:16][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:16][INFO]  Lidar restart approved.
+[2025-10-29|15:59:16][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:16][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:16][INFO]  Lidar restart approved.
+[2025-10-29|15:59:16][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:16][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:16][INFO]  Lidar restart approved.
+[2025-10-29|15:59:16][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:16][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:16][INFO]  Lidar restart approved.
+[2025-10-29|15:59:17][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:17][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:17][INFO]  Lidar restart approved.
+[2025-10-29|15:59:17][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:17][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:17][INFO]  Lidar restart approved.
+[2025-10-29|15:59:17][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:17][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:17][INFO]  Lidar restart approved.
+[2025-10-29|15:59:17][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:17][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:17][INFO]  Lidar restart approved.
+[2025-10-29|15:59:18][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:18][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:18][INFO]  Lidar restart approved.
+[2025-10-29|15:59:18][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:18][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:18][INFO]  Lidar restart approved.
+[2025-10-29|15:59:18][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:18][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:18][INFO]  Lidar restart approved.
+[2025-10-29|15:59:18][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:18][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:18][INFO]  Lidar restart approved.
+[2025-10-29|15:59:18][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:18][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:18][INFO]  Lidar restart approved.
+[2025-10-29|15:59:19][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:19][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:19][INFO]  Lidar restart approved.
+[2025-10-29|15:59:19][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:19][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:19][INFO]  Lidar restart approved.
+[2025-10-29|15:59:19][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:19][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:19][INFO]  Lidar restart approved.
+[2025-10-29|15:59:19][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:19][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:19][INFO]  Lidar restart approved.
+[2025-10-29|15:59:20][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:20][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:20][INFO]  Lidar restart approved.
+[2025-10-29|15:59:20][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:20][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:20][INFO]  Lidar restart approved.
+[2025-10-29|15:59:20][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:20][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:20][INFO]  Lidar restart approved.
+[2025-10-29|15:59:20][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:20][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:20][INFO]  Lidar restart approved.
+[2025-10-29|15:59:20][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:20][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:20][INFO]  Lidar restart approved.
+[2025-10-29|15:59:21][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:21][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:21][INFO]  Lidar restart approved.
+[2025-10-29|15:59:21][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:21][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:21][INFO]  Lidar restart approved.
+[2025-10-29|15:59:21][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:21][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:21][INFO]  Lidar restart approved.
+[2025-10-29|15:59:21][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:21][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:21][INFO]  Lidar restart approved.
+[2025-10-29|15:59:22][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:22][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:22][INFO]  Lidar restart approved.
+[2025-10-29|15:59:22][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:22][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:22][INFO]  Lidar restart approved.
+[2025-10-29|15:59:22][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:22][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:22][INFO]  Lidar restart approved.
+[2025-10-29|15:59:22][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:22][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:22][INFO]  Lidar restart approved.
+[2025-10-29|15:59:23][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:23][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:23][INFO]  Lidar restart approved.
+[2025-10-29|15:59:23][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:23][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:23][INFO]  Lidar restart approved.
+[2025-10-29|15:59:23][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:23][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:23][INFO]  Lidar restart approved.
+[2025-10-29|15:59:23][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:23][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:23][INFO]  Lidar restart approved.
+[2025-10-29|15:59:24][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:24][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:24][INFO]  Lidar restart approved.
+[2025-10-29|15:59:24][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:24][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:24][INFO]  Lidar restart approved.
+[2025-10-29|15:59:24][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:24][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:25][INFO]  Lidar restart approved.
+[2025-10-29|15:59:26][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:26][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:26][INFO]  Lidar restart approved.
+[2025-10-29|15:59:26][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:26][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:27][INFO]  Lidar restart approved.
+[2025-10-29|15:59:27][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:27][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:27][INFO]  Lidar restart approved.
+[2025-10-29|15:59:27][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:27][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:27][INFO]  Lidar restart approved.
+[2025-10-29|15:59:27][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:27][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:27][INFO]  Lidar restart approved.
+[2025-10-29|15:59:28][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:28][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:28][INFO]  Lidar restart approved.
+[2025-10-29|15:59:28][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:28][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:28][INFO]  Lidar restart approved.
+[2025-10-29|15:59:28][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:28][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:28][INFO]  Lidar restart approved.
+[2025-10-29|15:59:28][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:28][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:28][INFO]  Lidar restart approved.
+[2025-10-29|15:59:29][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:29][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:29][INFO]  Lidar restart approved.
+[2025-10-29|15:59:29][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:29][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:29][INFO]  Lidar restart approved.
+[2025-10-29|15:59:29][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:29][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:29][INFO]  Lidar restart approved.
+[2025-10-29|15:59:30][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:30][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:30][INFO]  Lidar restart approved.
+[2025-10-29|15:59:30][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:30][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:30][INFO]  Lidar restart approved.
+[2025-10-29|15:59:30][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:30][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:30][INFO]  Lidar restart approved.
+[2025-10-29|15:59:30][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:30][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:30][INFO]  Lidar restart approved.
+[2025-10-29|15:59:31][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:31][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:31][INFO]  Lidar restart approved.
+[2025-10-29|15:59:31][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:31][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:31][INFO]  Lidar restart approved.
+[2025-10-29|15:59:31][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:31][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:31][INFO]  Lidar restart approved.
+[2025-10-29|15:59:31][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:31][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:31][INFO]  Lidar restart approved.
+[2025-10-29|15:59:32][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:32][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:32][INFO]  Lidar restart approved.
+[2025-10-29|15:59:32][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:32][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:32][INFO]  Lidar restart approved.
+[2025-10-29|15:59:32][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:32][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:32][INFO]  Lidar restart approved.
+[2025-10-29|15:59:32][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:32][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:32][INFO]  Lidar restart approved.
+[2025-10-29|15:59:33][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:33][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:33][INFO]  Lidar restart approved.
+[2025-10-29|15:59:33][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:33][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:33][INFO]  Lidar restart approved.
+[2025-10-29|15:59:33][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:33][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:33][INFO]  Lidar restart approved.
+[2025-10-29|15:59:33][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:33][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:33][INFO]  Lidar restart approved.
+[2025-10-29|15:59:34][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:34][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:34][INFO]  Lidar restart approved.
+[2025-10-29|15:59:34][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:34][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:34][INFO]  Lidar restart approved.
+[2025-10-29|15:59:34][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:34][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:34][INFO]  Lidar restart approved.
+[2025-10-29|15:59:34][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:34][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:34][INFO]  Lidar restart approved.
+[2025-10-29|15:59:34][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:34][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:34][INFO]  Lidar restart approved.
+[2025-10-29|15:59:35][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:35][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:35][INFO]  Lidar restart approved.
+[2025-10-29|15:59:35][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:35][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:35][INFO]  Lidar restart approved.
+[2025-10-29|15:59:35][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:35][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:35][INFO]  Lidar restart approved.
+[2025-10-29|15:59:35][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:35][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:36][INFO]  Lidar restart approved.
+[2025-10-29|15:59:36][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:36][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:36][INFO]  Lidar restart approved.
+[2025-10-29|15:59:36][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:36][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:36][INFO]  Lidar restart approved.
+[2025-10-29|15:59:36][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:36][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:36][INFO]  Lidar restart approved.
+[2025-10-29|15:59:37][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:37][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:37][INFO]  Lidar restart approved.
+[2025-10-29|15:59:37][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:37][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:37][INFO]  Lidar restart approved.
+[2025-10-29|15:59:37][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:37][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:37][INFO]  Lidar restart approved.
+[2025-10-29|15:59:37][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:37][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:37][INFO]  Lidar restart approved.
+[2025-10-29|15:59:38][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:38][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:38][INFO]  Lidar restart approved.
+[2025-10-29|15:59:38][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:38][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:38][INFO]  Lidar restart approved.
+[2025-10-29|15:59:38][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:38][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:38][INFO]  Lidar restart approved.
+[2025-10-29|15:59:38][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:38][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:38][INFO]  Lidar restart approved.
+[2025-10-29|15:59:38][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:38][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:38][INFO]  Lidar restart approved.
+[2025-10-29|15:59:39][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:39][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:39][INFO]  Lidar restart approved.
+[2025-10-29|15:59:39][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:39][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:39][INFO]  Lidar restart approved.
+[2025-10-29|15:59:39][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:39][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:39][INFO]  Lidar restart approved.
+[2025-10-29|15:59:40][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:40][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:40][INFO]  Lidar restart approved.
+[2025-10-29|15:59:41][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:41][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:41][INFO]  Lidar restart approved.
+[2025-10-29|15:59:42][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:42][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:42][INFO]  Lidar restart approved.
+[2025-10-29|15:59:42][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:42][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:42][INFO]  Lidar restart approved.
+[2025-10-29|15:59:42][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:42][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:42][INFO]  Lidar restart approved.
+[2025-10-29|15:59:42][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:42][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:42][INFO]  Lidar restart approved.
+[2025-10-29|15:59:43][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:43][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:43][INFO]  Lidar restart approved.
+[2025-10-29|15:59:43][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:43][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:43][INFO]  Lidar restart approved.
+[2025-10-29|15:59:43][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:43][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:43][INFO]  Lidar restart approved.
+[2025-10-29|15:59:43][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:43][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:43][INFO]  Lidar restart approved.
+[2025-10-29|15:59:44][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:44][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:44][INFO]  Lidar restart approved.
+[2025-10-29|15:59:44][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:44][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:44][INFO]  Lidar restart approved.
+[2025-10-29|15:59:44][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:44][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:44][INFO]  Lidar restart approved.
+[2025-10-29|15:59:44][INFO]  2025-10-29 15:59:44: [Robot FSM] Finish motion move_to_fryer with [basket 1, fryer 1]
+[2025-10-29|15:59:44][INFO]  2025-10-29 15:59:44: [Basket 1 FSM] Motion move_to_fryer done (0)
+[2025-10-29|15:59:44][DEBUG] DryRecipeFsmSequence: Trigger Event MOTION_DONE on MOVE_TO_FRYER
+[2025-10-29|15:59:44][INFO]  2025-10-29 15:59:44: [Basket 1 FSM] Exit DryMoveToFryStrategy State.
+[2025-10-29|15:59:44][DEBUG] DryRecipeFsmSequence: Enter new state FRY
+[2025-10-29|15:59:44][INFO]  2025-10-29 15:59:44: [Basket 1 FSM] Enter DryFryStrategy State.
+[2025-10-29|15:59:44][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:44][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:44][INFO]  Lidar restart approved.
+[2025-10-29|15:59:44][INFO]  Command I600 : 0
+[2025-10-29|15:59:44][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:44][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:44][INFO]  Lidar restart approved.
+[2025-10-29|15:59:45][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:45][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:45][INFO]  Lidar restart approved.
+[2025-10-29|15:59:45][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:45][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:45][INFO]  Lidar restart approved.
+[2025-10-29|15:59:45][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:45][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:45][INFO]  Lidar restart approved.
+[2025-10-29|15:59:45][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:45][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:45][INFO]  Lidar restart approved.
+[2025-10-29|15:59:46][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_BASKET_TO_FRYER
+[2025-10-29|15:59:46][INFO]  2025-10-29 15:59:46: Exit MoveBasketToFryerStrategy State.
+[2025-10-29|15:59:46][DEBUG] RobotFsmSequence: Enter new state MOVE_TO_READY
+[2025-10-29|15:59:46][INFO]  2025-10-29 15:59:46: [Robot FSM] Enter MoveToReadyStrategy State.
+[2025-10-29|15:59:46][INFO]  2025-10-29 15:59:46: [Robot FSM] Start motion True move_to_ready  
+[2025-10-29|15:59:46][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:46][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:46][INFO]  Lidar restart approved.
+[2025-10-29|15:59:46][INFO]  Command I600 : 100
+[2025-10-29|15:59:46][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:46][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:46][INFO]  Lidar restart approved.
+[2025-10-29|15:59:46][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:46][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:46][INFO]  Lidar restart approved.
+[2025-10-29|15:59:46][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:46][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:46][INFO]  Lidar restart approved.
+[2025-10-29|15:59:47][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:47][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:47][INFO]  Lidar restart approved.
+[2025-10-29|15:59:47][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:47][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:47][INFO]  Lidar restart approved.
+[2025-10-29|15:59:47][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:47][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:47][INFO]  Lidar restart approved.
+[2025-10-29|15:59:47][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:47][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:47][INFO]  Lidar restart approved.
+[2025-10-29|15:59:48][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:48][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:48][INFO]  Lidar restart approved.
+[2025-10-29|15:59:48][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:48][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:48][INFO]  Lidar restart approved.
+[2025-10-29|15:59:48][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:48][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:48][INFO]  Lidar restart approved.
+[2025-10-29|15:59:48][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:48][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:48][INFO]  Lidar restart approved.
+[2025-10-29|15:59:49][INFO]  2025-10-29 15:59:49: [Robot FSM] Finish motion move_to_ready
+[2025-10-29|15:59:49][DEBUG] RobotFsmSequence: Trigger Event DONE on MOVE_TO_READY
+[2025-10-29|15:59:49][INFO]  2025-10-29 15:59:49: [Robot FSM] Exiting MoveToReadyStrategy State.
+[2025-10-29|15:59:49][DEBUG] RobotFsmSequence: Enter new state READY_IDLE
+[2025-10-29|15:59:49][INFO]  2025-10-29 15:59:49: [Robot FSM] Enter ReadyIdleStrategy State.
+[2025-10-29|15:59:49][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:49][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:49][INFO]  Lidar restart approved.
+[2025-10-29|15:59:49][INFO]  Command I600 : 0
+[2025-10-29|15:59:49][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:49][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:49][INFO]  Lidar restart approved.
+[2025-10-29|15:59:49][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:49][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:49][INFO]  Lidar restart approved.
+[2025-10-29|15:59:49][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:49][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:50][INFO]  Lidar restart approved.
+[2025-10-29|15:59:50][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:50][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:50][INFO]  Lidar restart approved.
+[2025-10-29|15:59:50][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:50][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:50][INFO]  Lidar restart approved.
+[2025-10-29|15:59:50][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:50][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:50][INFO]  Lidar restart approved.
+[2025-10-29|15:59:51][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:51][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:51][INFO]  Lidar restart approved.
+[2025-10-29|15:59:51][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:51][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:51][INFO]  Lidar restart approved.
+[2025-10-29|15:59:51][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:51][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:51][INFO]  Lidar restart approved.
+[2025-10-29|15:59:51][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:51][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:51][INFO]  Lidar restart approved.
+[2025-10-29|15:59:52][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:52][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:52][INFO]  Lidar restart approved.
+[2025-10-29|15:59:52][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:52][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:52][INFO]  Lidar restart approved.
+[2025-10-29|15:59:52][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:52][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:52][INFO]  Lidar restart approved.
+[2025-10-29|15:59:53][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:53][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:53][INFO]  Lidar restart approved.
+[2025-10-29|15:59:53][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:53][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:53][INFO]  Lidar restart approved.
+[2025-10-29|15:59:53][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:53][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:53][INFO]  Lidar restart approved.
+[2025-10-29|15:59:54][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:54][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:54][INFO]  Lidar restart approved.
+[2025-10-29|15:59:54][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:54][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:54][INFO]  Lidar restart approved.
+[2025-10-29|15:59:54][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:54][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:54][INFO]  Lidar restart approved.
+[2025-10-29|15:59:56][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:56][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:56][INFO]  Lidar restart approved.
+[2025-10-29|15:59:57][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:57][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:57][INFO]  Lidar restart approved.
+[2025-10-29|15:59:57][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:57][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:57][INFO]  Lidar restart approved.
+[2025-10-29|15:59:57][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:57][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:57][INFO]  Lidar restart approved.
+[2025-10-29|15:59:58][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:58][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:58][INFO]  Lidar restart approved.
+[2025-10-29|15:59:58][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:58][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:58][INFO]  Lidar restart approved.
+[2025-10-29|15:59:58][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:58][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:58][INFO]  Lidar restart approved.
+[2025-10-29|15:59:59][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:59][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:59][INFO]  Lidar restart approved.
+[2025-10-29|15:59:59][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:59][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:59][INFO]  Lidar restart approved.
+[2025-10-29|15:59:59][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|15:59:59][INFO]  Lidar restart command is now: 0
+[2025-10-29|15:59:59][INFO]  Lidar restart approved.
+[2025-10-29|16:00:00][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:00][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:00][INFO]  Lidar restart approved.
+[2025-10-29|16:00:00][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:00][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:00][INFO]  Lidar restart approved.
+[2025-10-29|16:00:00][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:00][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:00][INFO]  Lidar restart approved.
+[2025-10-29|16:00:01][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:01][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:01][INFO]  Lidar restart approved.
+[2025-10-29|16:00:01][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:01][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:01][INFO]  Lidar restart approved.
+[2025-10-29|16:00:01][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:01][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:01][INFO]  Lidar restart approved.
+[2025-10-29|16:00:01][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:01][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:01][INFO]  Lidar restart approved.
+[2025-10-29|16:00:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:02][INFO]  Lidar restart approved.
+[2025-10-29|16:00:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:02][INFO]  Lidar restart approved.
+[2025-10-29|16:00:02][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:02][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:02][INFO]  Lidar restart approved.
+[2025-10-29|16:00:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:03][INFO]  Lidar restart approved.
+[2025-10-29|16:00:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:03][INFO]  Lidar restart approved.
+[2025-10-29|16:00:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:03][INFO]  Lidar restart approved.
+[2025-10-29|16:00:03][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:03][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:03][INFO]  Lidar restart approved.
+[2025-10-29|16:00:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:04][INFO]  Lidar restart approved.
+[2025-10-29|16:00:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:04][INFO]  Lidar restart approved.
+[2025-10-29|16:00:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:04][INFO]  Lidar restart approved.
+[2025-10-29|16:00:04][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:04][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:04][INFO]  Lidar restart approved.
+[2025-10-29|16:00:05][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:05][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:05][INFO]  Lidar restart approved.
+[2025-10-29|16:00:05][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:05][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:05][INFO]  Lidar restart approved.
+[2025-10-29|16:00:06][WARN]  [SIGNAL] Received signal 2. Gracefully shutting down...
+[2025-10-29|16:00:06][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:06][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:06][INFO]  Lidar restart approved.
+[2025-10-29|16:00:06][INFO]  [SYSTEM] Shutdown started...
+[2025-10-29|16:00:06][INFO]  Lidar restart command received (is 1). Setting to 0.
+[2025-10-29|16:00:06][INFO]  Lidar restart command is now: 0
+[2025-10-29|16:00:06][INFO]  Lidar restart approved.
+[2025-10-29|16:00:06][INFO]  Stop program!!
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  WetRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  DryRecipeFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  RobotFsmSequence: Stopping FSM service thread.
+[2025-10-29|16:00:06][INFO]  RobotFsmSequence: FSM service thread stopped.
+[2025-10-29|16:00:06][INFO]  [SYSTEM] Shutdown complete.
