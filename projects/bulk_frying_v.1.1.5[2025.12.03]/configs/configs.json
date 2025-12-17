@@ -15,7 +15,7 @@
         "endtool_port": "A",
         "open_channel": 1,
         "ai_channel": 0,
-        "filter_alpha": 0.9,
+        "filter_alpha": 0.45,
         "open_bound": [
             50,
             200
@@ -24,8 +24,8 @@
             7500,
             9600
         ],
-        "open_failure_duration": 5,
-        "close_failure_duration": 5
+        "open_failure_duration": 20,
+        "close_failure_duration": 20
     },
     "switch_button": {
         "button_type": "toggle",
